@@ -1,0 +1,102 @@
+{
+  "transcription": [
+    {
+      "text": "",
+      "offsets": {
+        "from": 0,
+        "to": 290
+      }
+    },
+    {
+      "text": "今天",
+      "offsets": {
+        "from": 290,
+        "to": 340
+      }
+    },
+    {
+      "text": "讲",
+      "offsets": {
+        "from": 340,
+        "to": 500
+      }
+    },
+    {
+      "text": "一个",
+      "offsets": {
+        "from": 500,
+        "to": 850
+      }
+    },
+    {
+      "text": "方",
+      "offsets": {
+        "from": 850,
+        "to": 1040
+      }
+    },
+    {
+      "text": "法",
+      "offsets": {
+        "from": 1040,
+        "to": 1200
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 1200,
+        "to": 1740
+      }
+    },
+    {
+      "text": "选",
+      "offsets": {
+        "from": 1740,
+        "to": 2150
+      }
+    },
+    {
+      "text": "程",
+      "offsets": {
+        "from": 2150,
+        "to": 2340
+      }
+    },
+    {
+      "text": "式",
+      "offsets": {
+        "from": 2340,
+        "to": 2710
+      }
+    },
+    {
+      "text": "算",
+      "offsets": {
+        "from": 2710,
+        "to": 2730
+      }
+    },
+    {
+      "text": "三",
+      "offsets": {
+        "from": 2730,
+        "to": 2900
+      }
+    },
+    {
+      "text": "本",
+      "offsets": {
+        "from": 2900,
+        "to": 3070
+      }
+    },
+    {
+      "text": "账",
+      "offsets": {
+        "from": 3070,
+        "to": 3620
+      }
+    }
+  ]
+}

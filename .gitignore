@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+.DS_Store
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.ttf
+*.otf
+*.part

@@ -1,0 +1,81 @@
+{
+  "transcription": [
+    {
+      "text": "上",
+      "offsets": {
+        "from": 0,
+        "to": 210
+      }
+    },
+    {
+      "text": "海",
+      "offsets": {
+        "from": 210,
+        "to": 300
+      }
+    },
+    {
+      "text": "、",
+      "offsets": {
+        "from": 300,
+        "to": 590
+      }
+    },
+    {
+      "text": "神",
+      "offsets": {
+        "from": 590,
+        "to": 780
+      }
+    },
+    {
+      "text": "圳",
+      "offsets": {
+        "from": 780,
+        "to": 1200
+      }
+    },
+    {
+      "text": "、",
+      "offsets": {
+        "from": 1200,
+        "to": 1500
+      }
+    },
+    {
+      "text": "东",
+      "offsets": {
+        "from": 1500,
+        "to": 1650
+      }
+    },
+    {
+      "text": "京",
+      "offsets": {
+        "from": 1650,
+        "to": 1800
+      }
+    },
+    {
+      "text": "、",
+      "offsets": {
+        "from": 1800,
+        "to": 2170
+      }
+    },
+    {
+      "text": "硅",
+      "offsets": {
+        "from": 2170,
+        "to": 2540
+      }
+    },
+    {
+      "text": "谷",
+      "offsets": {
+        "from": 2540,
+        "to": 3000
+      }
+    }
+  ]
+}

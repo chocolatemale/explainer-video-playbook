@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "tax_year": 2025,
+    "input_snapshot_year": 2026,
+    "fx_date": "2026-10-16",
+    "money_unit": "CNY/year",
+    "percent_unit": "percent (0–100)",
+    "assumptions": "30岁单身无抚养、全年当地税务居民、前一年同薪；总包（含股票）全部按工资并均分12个月；不使用奖金/股权优惠；中国不扣公积金及其税前扣除；美国标准扣除，不扣商业医保/401(k)；日本计次年住民税稳态；沿用2025下半年标准年化和日本标准报酬连续近似。",
+    "rounding": "本币分项不先取整（日本应税额按千日元向下取整）；税社保本币合计乘汇率后四舍五入至人民币分；到手用city_data已存人民币总包减该合计；年租用已存人民币月租×12；比例以人民币分计算并保留6位小数。",
+    "meaning_of_remaining": "仅减税社保和房租，未减餐饮交通等其他开支，不是全年储蓄。自报薪酬和众包租金均仅辅助；东京薪酬覆盖Greater Tokyo Area，南湾代理为San Jose。",
+    "source_model": "city_data.md；city_data.json（均只读）"
+  },
+  "cities": {
+    "上海": {
+      "total_comp_cny": 666112.0,
+      "tax_social_total_cny": 161813.96,
+      "take_home_cny": 504298.04,
+      "take_home_percent": 75.707695,
+      "annual_rent_cny": 83428.56,
+      "remaining_cny": 420869.48,
+      "rent_to_take_home_percent": 16.543503,
+      "formulas": {
+        "total_comp_cny": "city_data.json 自报总包原值 666112×1；采用已存人民币值 666112.0",
+        "tax_social_total_cny": "round2((35809.92 + 8952.48 + 2238.120 + 114813.44400)×1) = 161813.96",
+        "take_home_cny": "666112.0−161813.96 = 504298.04",
+        "take_home_percent": "504298.04÷666112.0×100%",
+        "annual_rent_cny": "6952.38×12 = 83428.56",
+        "remaining_cny": "504298.04−83428.56 = 420869.48",
+        "rent_to_take_home_percent": "83428.56÷504298.04×100%"
+      },
+      "currency": "CNY",
+      "total_comp_local": 666112.0,
+      "monthly_rent_cny": 6952.38,
+      "fx_cny_per_local": 1.0,
+      "breakdown_local": {
+        "pension": 35809.92,
+        "health": 8952.48,
+        "unemployment": 2238.12,
+        "income_tax": 114813.444
+      },
+      "breakdown_formulas": {
+        "pension": "min(666112/12,37302)×12×8%",
+        "health": "min(666112/12,37302)×12×2%",
+        "unemployment": "min(666112/12,37302)×12×0.5%",
+        "income_tax": "(666112−60000−47000.52)×30%−52920"
+      },
+      "input_sources": {
+        "total_comp": "https://www.levels.fyi/t/software-engineer/locations/shanghai-chn",
+        "rent": "https://www.numbeo.com/cost-of-living/in/Shanghai",
+        "previous_tax_model": "city_data.json / 上海 / modeled_take_home_annual"
+      }
+    },
+    "深圳": {
+      "total_comp_cny": 505231.0,
+      "tax_social_total_cny": 106040.76,
+      "take_home_cny": 399190.24,
+      "take_home_percent": 79.01143,
+      "annual_rent_cny": 61144.56,
+      "remaining_cny": 338045.68,
+      "rent_to_take_home_percent": 15.317148,
+      "formulas": {
+        "total_comp_cny": "city_data.json 自报总包原值 505231×1；采用已存人民币值 505231.0",
+        "tax_social_total_cny": "round2((26447.04 + 8079.84 + 1010.462000000000000000000000 + 70503.4145000000000000000000)×1) = 106040.76",
+        "take_home_cny": "505231.0−106040.76 = 399190.24",
+        "take_home_percent": "399190.24÷505231.0×100%",
+        "annual_rent_cny": "5095.38×12 = 61144.56",
+        "remaining_cny": "399190.24−61144.56 = 338045.68",
+        "rent_to_take_home_percent": "61144.56÷399190.24×100%"
+      },
+      "currency": "CNY",
+      "total_comp_local": 505231.0,
+      "monthly_rent_cny": 5095.38,
+      "fx_cny_per_local": 1.0,
+      "breakdown_local": {
+        "pension": 26447.04,
+        "health": 8079.84,
+        "unemployment": 1010.462,
+        "income_tax": 70503.4145
+      },
+      "breakdown_formulas": {
+        "pension": "min(505231/12,27549)×12×8%",
+        "health": "min(505231/12,33666)×12×2%",
+        "unemployment": "min(505231/12,44265)×12×0.2%",
+        "income_tax": "(505231−60000−35537.342)×25%−31920"
+      },
+      "input_sources": {
+        "total_comp": "https://www.levels.fyi/t/software-engineer/locations/shenzhen-chn",
+        "rent": "https://www.numbeo.com/cost-of-living/in/Shenzhen/",
+        "previous_tax_model": "city_data.json / 深圳 / modeled_take_home_annual"
+      }
+    },
+    "东京": {
+      "total_comp_cny": 362390.7,
+      "tax_social_total_cny": 94747.81,
+      "take_home_cny": 267642.89,
+      "take_home_percent": 73.85479,
+      "annual_rent_cny": 103063.08,
+      "remaining_cny": 164579.81,
+      "rent_to_take_home_percent": 38.507685,
+      "formulas": {
+        "total_comp_cny": "city_data.json 自报总包原值 8539096×0.042439；采用已存人民币值 362390.7",
+        "tax_social_total_cny": "round2((423112.2068000000000000000000 + 713700.0000 + 46965.0280 + 548787.50000 + 500000.0)×0.042439) = 94747.81",
+        "take_home_cny": "362390.7−94747.81 = 267642.89",
+        "take_home_percent": "267642.89÷362390.7×100%",
+        "annual_rent_cny": "8588.59×12 = 103063.08",
+        "remaining_cny": "267642.89−103063.08 = 164579.81",
+        "rent_to_take_home_percent": "103063.08÷267642.89×100%"
+      },
+      "currency": "JPY",
+      "total_comp_local": 8539096.0,
+      "monthly_rent_cny": 8588.59,
+      "fx_cny_per_local": 0.042439,
+      "breakdown_local": {
+        "health": 423112.2068,
+        "pension": 713700.0,
+        "unemployment": 46965.028,
+        "income_tax": 548787.5,
+        "resident_tax": 500000.0
+      },
+      "breakdown_formulas": {
+        "health": "min(8539096/12,1390000)×12×4.955%（连续近似）",
+        "pension": "min(8539096/12,650000)×12×9.15%",
+        "unemployment": "8539096×0.55%",
+        "income_tax": "(floor1000(8539096−1950000−1183777.2348−580000)×20%−427500)×1.021 = (4825000×20%−427500)×1.021",
+        "resident_tax": "floor1000(8539096−1950000−1183777.2348−430000)×10%+5000−2500 = 4975000×10%+2500"
+      },
+      "input_sources": {
+        "total_comp": "https://www.levels.fyi/t/software-engineer/locations/greater-tokyo-area",
+        "rent": "https://www.numbeo.com/cost-of-living/in/Tokyo",
+        "previous_tax_model": "city_data.json / 东京 / modeled_take_home_annual"
+      }
+    },
+    "硅谷（南湾）": {
+      "total_comp_cny": 1571267.5,
+      "tax_social_total_cny": 549409.6,
+      "take_home_cny": 1021857.9,
+      "take_home_percent": 65.033987,
+      "annual_rent_cny": 248893.56,
+      "remaining_cny": 772964.34,
+      "rent_to_take_home_percent": 24.356964,
+      "formulas": {
+        "total_comp_cny": "city_data.json 自报总包原值 233750×6.7220；采用已存人民币值 1571267.5",
+        "tax_social_total_cny": "round2((10918.200 + 3389.3750 + 303.750 + 2805.000 + 46823.00 + 17493.730)×6.7220) = 549409.60",
+        "take_home_cny": "1571267.5−549409.60 = 1021857.90",
+        "take_home_percent": "1021857.90÷1571267.5×100%",
+        "annual_rent_cny": "20741.13×12 = 248893.56",
+        "remaining_cny": "1021857.90−248893.56 = 772964.34",
+        "rent_to_take_home_percent": "248893.56÷1021857.90×100%"
+      },
+      "currency": "USD",
+      "total_comp_local": 233750.0,
+      "monthly_rent_cny": 20741.13,
+      "fx_cny_per_local": 6.722,
+      "breakdown_local": {
+        "social_security": 10918.2,
+        "medicare": 3389.375,
+        "additional_medicare": 303.75,
+        "sdi": 2805.0,
+        "federal_tax": 46823.0,
+        "state_tax": 17493.73
+      },
+      "breakdown_formulas": {
+        "social_security": "min(233750,176100)×6.2%",
+        "medicare": "233750×1.45%（不封顶）",
+        "additional_medicare": "max(233750−200000,0)×0.9%",
+        "sdi": "233750×1.2%（2025不封顶）",
+        "federal_tax": "应税额=233750−15750=218000；11925×10%+36550×12%+54875×22%+93950×24%+20700×32%",
+        "state_tax": "应税额=233750−5706=228044；3201.97+(228044−72724)×9.3%−153"
+      },
+      "input_sources": {
+        "total_comp": "https://www.levels.fyi/t/software-engineer/locations/san-jose-usa",
+        "rent": "https://www.numbeo.com/cost-of-living/in/San-Jose",
+        "previous_tax_model": "city_data.json / 硅谷（南湾） / modeled_take_home_annual"
+      }
+    }
+  }
+}

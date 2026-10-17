@@ -1,0 +1,98 @@
+{
+  "method": "mean absolute difference of all RGBA channels, 0–255",
+  "frames": [
+    {
+      "frame": 10,
+      "mode": "F",
+      "caption": "上海",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    },
+    {
+      "frame": 150,
+      "mode": "B",
+      "caption": "假如四份工作机会",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    },
+    {
+      "frame": 600,
+      "mode": "B",
+      "caption": "钱账",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    },
+    {
+      "frame": 932,
+      "mode": "F",
+      "caption": "让不让你留下来",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    },
+    {
+      "frame": 1250,
+      "mode": "B",
+      "caption": "是上海的两倍多",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    },
+    {
+      "frame": 1560,
+      "mode": "B",
+      "caption": "差距从两倍多",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    },
+    {
+      "frame": 2350,
+      "mode": "B",
+      "caption": "上海七十四家",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    },
+    {
+      "frame": 3080,
+      "mode": "B",
+      "caption": "一年下来就是一百七十多个小时",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    },
+    {
+      "frame": 3500,
+      "mode": "B",
+      "caption": "最快一年就能申请永住",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    },
+    {
+      "frame": 4580,
+      "mode": "B",
+      "caption": "给三本账和那道门打分",
+      "mean_absolute_error_rgba": {
+        "gfx": 0.0,
+        "subs": 0.0
+      }
+    }
+  ],
+  "mean": 0.0,
+  "threshold": 3,
+  "passed": true
+}

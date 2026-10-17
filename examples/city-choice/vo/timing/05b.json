@@ -1,0 +1,830 @@
+{
+  "transcription": [
+    {
+      "text": "最",
+      "offsets": {
+        "from": 0,
+        "to": 240
+      }
+    },
+    {
+      "text": "后",
+      "offsets": {
+        "from": 240,
+        "to": 280
+      }
+    },
+    {
+      "text": "是",
+      "offsets": {
+        "from": 280,
+        "to": 390
+      }
+    },
+    {
+      "text": "一",
+      "offsets": {
+        "from": 390,
+        "to": 520
+      }
+    },
+    {
+      "text": "道",
+      "offsets": {
+        "from": 520,
+        "to": 650
+      }
+    },
+    {
+      "text": "门",
+      "offsets": {
+        "from": 650,
+        "to": 1080
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 1080,
+        "to": 1490
+      }
+    },
+    {
+      "text": "能",
+      "offsets": {
+        "from": 1490,
+        "to": 1510
+      }
+    },
+    {
+      "text": "来",
+      "offsets": {
+        "from": 1510,
+        "to": 1700
+      }
+    },
+    {
+      "text": "不",
+      "offsets": {
+        "from": 1700,
+        "to": 1910
+      }
+    },
+    {
+      "text": "等",
+      "offsets": {
+        "from": 1910,
+        "to": 2120
+      }
+    },
+    {
+      "text": "于",
+      "offsets": {
+        "from": 2120,
+        "to": 2330
+      }
+    },
+    {
+      "text": "能",
+      "offsets": {
+        "from": 2330,
+        "to": 2540
+      }
+    },
+    {
+      "text": "留",
+      "offsets": {
+        "from": 2540,
+        "to": 2750
+      }
+    },
+    {
+      "text": "下",
+      "offsets": {
+        "from": 2750,
+        "to": 2970
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 2970,
+        "to": 3190
+      }
+    },
+    {
+      "text": "深",
+      "offsets": {
+        "from": 3190,
+        "to": 3510
+      }
+    },
+    {
+      "text": "圳",
+      "offsets": {
+        "from": 3510,
+        "to": 3680
+      }
+    },
+    {
+      "text": "的人",
+      "offsets": {
+        "from": 3680,
+        "to": 3920
+      }
+    },
+    {
+      "text": "才",
+      "offsets": {
+        "from": 3920,
+        "to": 4040
+      }
+    },
+    {
+      "text": "落",
+      "offsets": {
+        "from": 4040,
+        "to": 4190
+      }
+    },
+    {
+      "text": "户",
+      "offsets": {
+        "from": 4190,
+        "to": 4570
+      }
+    },
+    {
+      "text": "门",
+      "offsets": {
+        "from": 4570,
+        "to": 4880
+      }
+    },
+    {
+      "text": "槛",
+      "offsets": {
+        "from": 4880,
+        "to": 5240
+      }
+    },
+    {
+      "text": "相",
+      "offsets": {
+        "from": 5240,
+        "to": 5360
+      }
+    },
+    {
+      "text": "对",
+      "offsets": {
+        "from": 5360,
+        "to": 5480
+      }
+    },
+    {
+      "text": "最",
+      "offsets": {
+        "from": 5480,
+        "to": 5600
+      }
+    },
+    {
+      "text": "低",
+      "offsets": {
+        "from": 5600,
+        "to": 5720
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 5720,
+        "to": 5990
+      }
+    },
+    {
+      "text": "上",
+      "offsets": {
+        "from": 5990,
+        "to": 6160
+      }
+    },
+    {
+      "text": "海",
+      "offsets": {
+        "from": 6160,
+        "to": 6210
+      }
+    },
+    {
+      "text": "的",
+      "offsets": {
+        "from": 6210,
+        "to": 6270
+      }
+    },
+    {
+      "text": "居",
+      "offsets": {
+        "from": 6270,
+        "to": 6600
+      }
+    },
+    {
+      "text": "转",
+      "offsets": {
+        "from": 6600,
+        "to": 6930
+      }
+    },
+    {
+      "text": "户",
+      "offsets": {
+        "from": 6930,
+        "to": 7260
+      }
+    },
+    {
+      "text": "一",
+      "offsets": {
+        "from": 7260,
+        "to": 7370
+      }
+    },
+    {
+      "text": "般",
+      "offsets": {
+        "from": 7370,
+        "to": 7480
+      }
+    },
+    {
+      "text": "要",
+      "offsets": {
+        "from": 7480,
+        "to": 7590
+      }
+    },
+    {
+      "text": "7",
+      "offsets": {
+        "from": 7590,
+        "to": 7920
+      }
+    },
+    {
+      "text": "年",
+      "offsets": {
+        "from": 7920,
+        "to": 8030
+      }
+    },
+    {
+      "text": "左右",
+      "offsets": {
+        "from": 8030,
+        "to": 8310
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 8310,
+        "to": 8520
+      }
+    },
+    {
+      "text": "东",
+      "offsets": {
+        "from": 8520,
+        "to": 8760
+      }
+    },
+    {
+      "text": "京",
+      "offsets": {
+        "from": 8760,
+        "to": 8830
+      }
+    },
+    {
+      "text": "的",
+      "offsets": {
+        "from": 8830,
+        "to": 8870
+      }
+    },
+    {
+      "text": "高",
+      "offsets": {
+        "from": 8870,
+        "to": 8990
+      }
+    },
+    {
+      "text": "度",
+      "offsets": {
+        "from": 8990,
+        "to": 9090
+      }
+    },
+    {
+      "text": "人",
+      "offsets": {
+        "from": 9090,
+        "to": 9220
+      }
+    },
+    {
+      "text": "才",
+      "offsets": {
+        "from": 9220,
+        "to": 9310
+      }
+    },
+    {
+      "text": "签",
+      "offsets": {
+        "from": 9310,
+        "to": 9630
+      }
+    },
+    {
+      "text": "证",
+      "offsets": {
+        "from": 9630,
+        "to": 9970
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 9970,
+        "to": 10200
+      }
+    },
+    {
+      "text": "积",
+      "offsets": {
+        "from": 10200,
+        "to": 10540
+      }
+    },
+    {
+      "text": "分",
+      "offsets": {
+        "from": 10540,
+        "to": 10570
+      }
+    },
+    {
+      "text": "够",
+      "offsets": {
+        "from": 10570,
+        "to": 10850
+      }
+    },
+    {
+      "text": "高",
+      "offsets": {
+        "from": 10850,
+        "to": 10940
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 10940,
+        "to": 11180
+      }
+    },
+    {
+      "text": "最",
+      "offsets": {
+        "from": 11180,
+        "to": 11350
+      }
+    },
+    {
+      "text": "快",
+      "offsets": {
+        "from": 11350,
+        "to": 11630
+      }
+    },
+    {
+      "text": "一",
+      "offsets": {
+        "from": 11630,
+        "to": 11690
+      }
+    },
+    {
+      "text": "年",
+      "offsets": {
+        "from": 11690,
+        "to": 11860
+      }
+    },
+    {
+      "text": "就",
+      "offsets": {
+        "from": 11860,
+        "to": 12030
+      }
+    },
+    {
+      "text": "能",
+      "offsets": {
+        "from": 12030,
+        "to": 12200
+      }
+    },
+    {
+      "text": "申",
+      "offsets": {
+        "from": 12200,
+        "to": 12710
+      }
+    },
+    {
+      "text": "请",
+      "offsets": {
+        "from": 12710,
+        "to": 12880
+      }
+    },
+    {
+      "text": "永",
+      "offsets": {
+        "from": 12880,
+        "to": 13050
+      }
+    },
+    {
+      "text": "住",
+      "offsets": {
+        "from": 13050,
+        "to": 13260
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 13260,
+        "to": 13440
+      }
+    },
+    {
+      "text": "去",
+      "offsets": {
+        "from": 13440,
+        "to": 13830
+      }
+    },
+    {
+      "text": "硅",
+      "offsets": {
+        "from": 13830,
+        "to": 14040
+      }
+    },
+    {
+      "text": "谷",
+      "offsets": {
+        "from": 14040,
+        "to": 14430
+      }
+    },
+    {
+      "text": "先",
+      "offsets": {
+        "from": 14430,
+        "to": 14560
+      }
+    },
+    {
+      "text": "得",
+      "offsets": {
+        "from": 14560,
+        "to": 14700
+      }
+    },
+    {
+      "text": "抽",
+      "offsets": {
+        "from": 14700,
+        "to": 14820
+      }
+    },
+    {
+      "text": "中",
+      "offsets": {
+        "from": 14820,
+        "to": 14950
+      }
+    },
+    {
+      "text": "工作",
+      "offsets": {
+        "from": 14950,
+        "to": 15210
+      }
+    },
+    {
+      "text": "签",
+      "offsets": {
+        "from": 15210,
+        "to": 15600
+      }
+    },
+    {
+      "text": "证",
+      "offsets": {
+        "from": 15600,
+        "to": 16080
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 16080,
+        "to": 16250
+      }
+    },
+    {
+      "text": "想",
+      "offsets": {
+        "from": 16250,
+        "to": 16380
+      }
+    },
+    {
+      "text": "长",
+      "offsets": {
+        "from": 16380,
+        "to": 16540
+      }
+    },
+    {
+      "text": "期",
+      "offsets": {
+        "from": 16540,
+        "to": 16640
+      }
+    },
+    {
+      "text": "留",
+      "offsets": {
+        "from": 16640,
+        "to": 16770
+      }
+    },
+    {
+      "text": "下",
+      "offsets": {
+        "from": 16770,
+        "to": 16900
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 16900,
+        "to": 17140
+      }
+    },
+    {
+      "text": "还",
+      "offsets": {
+        "from": 17140,
+        "to": 17400
+      }
+    },
+    {
+      "text": "要",
+      "offsets": {
+        "from": 17400,
+        "to": 17430
+      }
+    },
+    {
+      "text": "另",
+      "offsets": {
+        "from": 17430,
+        "to": 17550
+      }
+    },
+    {
+      "text": "走",
+      "offsets": {
+        "from": 17550,
+        "to": 17680
+      }
+    },
+    {
+      "text": "移",
+      "offsets": {
+        "from": 17680,
+        "to": 18070
+      }
+    },
+    {
+      "text": "民",
+      "offsets": {
+        "from": 18070,
+        "to": 18200
+      }
+    },
+    {
+      "text": "程",
+      "offsets": {
+        "from": 18200,
+        "to": 18340
+      }
+    },
+    {
+      "text": "序",
+      "offsets": {
+        "from": 18340,
+        "to": 18720
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 18720,
+        "to": 19000
+      }
+    },
+    {
+      "text": "这",
+      "offsets": {
+        "from": 19000,
+        "to": 19160
+      }
+    },
+    {
+      "text": "道",
+      "offsets": {
+        "from": 19160,
+        "to": 19270
+      }
+    },
+    {
+      "text": "门",
+      "offsets": {
+        "from": 19270,
+        "to": 19490
+      }
+    },
+    {
+      "text": "决",
+      "offsets": {
+        "from": 19490,
+        "to": 19820
+      }
+    },
+    {
+      "text": "定",
+      "offsets": {
+        "from": 19820,
+        "to": 19930
+      }
+    },
+    {
+      "text": "了",
+      "offsets": {
+        "from": 19930,
+        "to": 20040
+      }
+    },
+    {
+      "text": "你",
+      "offsets": {
+        "from": 20040,
+        "to": 20150
+      }
+    },
+    {
+      "text": "能",
+      "offsets": {
+        "from": 20150,
+        "to": 20260
+      }
+    },
+    {
+      "text": "不能",
+      "offsets": {
+        "from": 20260,
+        "to": 20480
+      }
+    },
+    {
+      "text": "在",
+      "offsets": {
+        "from": 20480,
+        "to": 20590
+      }
+    },
+    {
+      "text": "这里",
+      "offsets": {
+        "from": 20590,
+        "to": 20810
+      }
+    },
+    {
+      "text": "买",
+      "offsets": {
+        "from": 20810,
+        "to": 21140
+      }
+    },
+    {
+      "text": "房",
+      "offsets": {
+        "from": 21140,
+        "to": 21250
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 21250,
+        "to": 21470
+      }
+    },
+    {
+      "text": "让",
+      "offsets": {
+        "from": 21470,
+        "to": 21580
+      }
+    },
+    {
+      "text": "孩子",
+      "offsets": {
+        "from": 21580,
+        "to": 21800
+      }
+    },
+    {
+      "text": "上",
+      "offsets": {
+        "from": 21800,
+        "to": 21910
+      }
+    },
+    {
+      "text": "学",
+      "offsets": {
+        "from": 21910,
+        "to": 22020
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 22020,
+        "to": 22240
+      }
+    },
+    {
+      "text": "安",
+      "offsets": {
+        "from": 22240,
+        "to": 22350
+      }
+    },
+    {
+      "text": "心",
+      "offsets": {
+        "from": 22350,
+        "to": 22460
+      }
+    },
+    {
+      "text": "变",
+      "offsets": {
+        "from": 22460,
+        "to": 22810
+      }
+    },
+    {
+      "text": "老",
+      "offsets": {
+        "from": 22810,
+        "to": 22900
+      }
+    },
+    {
+      "text": "。",
+      "offsets": {
+        "from": 22900,
+        "to": 23360
+      }
+    }
+  ]
+}

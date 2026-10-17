@@ -1,0 +1,229 @@
+{
+  "fps": 25,
+  "total_frames": 4690,
+  "shots": [
+    {
+      "seg": "00a",
+      "clip": "39515873",
+      "rec": 0,
+      "frames": 21,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00a",
+      "clip": "35987650",
+      "rec": 21,
+      "frames": 23,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00a",
+      "clip": "35488258",
+      "rec": 44,
+      "frames": 16,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00a",
+      "clip": "33249268",
+      "rec": 60,
+      "frames": 184,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00c",
+      "clip": "6326929",
+      "rec": 244,
+      "frames": 513,
+      "src_in_sec": 0.0
+    },
+    {
+      "seg": "00c",
+      "clip": "6326929",
+      "rec": 757,
+      "frames": 123,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "01",
+      "clip": "7010153",
+      "rec": 880,
+      "frames": 154,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02b",
+      "clip": "8266171",
+      "rec": 1034,
+      "frames": 77,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02b",
+      "clip": "29545807",
+      "rec": 1111,
+      "frames": 337,
+      "src_in_sec": 0.0
+    },
+    {
+      "seg": "02b",
+      "clip": "29545807",
+      "rec": 1448,
+      "frames": 232,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02d",
+      "clip": "31979796",
+      "rec": 1680,
+      "frames": 136,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02e",
+      "clip": "7578842",
+      "rec": 1816,
+      "frames": 276,
+      "src_in_sec": 0.0
+    },
+    {
+      "seg": "03b",
+      "clip": "33751774",
+      "rec": 2092,
+      "frames": 321,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "03c",
+      "clip": "6804109",
+      "rec": 2413,
+      "frames": 104,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "03d",
+      "clip": "16407855",
+      "rec": 2517,
+      "frames": 168,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04b",
+      "clip": "29610852",
+      "rec": 2685,
+      "frames": 79,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04b",
+      "clip": "19347491",
+      "rec": 2764,
+      "frames": 42,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04b",
+      "clip": "35969847",
+      "rec": 2806,
+      "frames": 47,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04b",
+      "clip": "18552655",
+      "rec": 2853,
+      "frames": 36,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04b",
+      "clip": "34777715",
+      "rec": 2889,
+      "frames": 325,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "05b",
+      "clip": "29576553",
+      "rec": 3214,
+      "frames": 368,
+      "src_in_sec": 0.0
+    },
+    {
+      "seg": "05b",
+      "clip": "29576553",
+      "rec": 3582,
+      "frames": 113,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "05b",
+      "clip": "6300455",
+      "rec": 3695,
+      "frames": 231,
+      "src_in_sec": 0.0
+    },
+    {
+      "seg": "05b",
+      "clip": "6300455",
+      "rec": 3926,
+      "frames": 44,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "06",
+      "clip": "30339963",
+      "rec": 3970,
+      "frames": 167,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "06",
+      "clip": "7578842",
+      "rec": 4137,
+      "frames": 134,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "06",
+      "clip": "6182047",
+      "rec": 4271,
+      "frames": 117,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "07",
+      "clip": "39410948",
+      "rec": 4388,
+      "frames": 253,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "07",
+      "clip": "35173187",
+      "rec": 4641,
+      "frames": 16,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "07",
+      "clip": "20162399",
+      "rec": 4657,
+      "frames": 16,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "07",
+      "clip": "10184687",
+      "rec": 4673,
+      "frames": 17,
+      "src_in_sec": 1.0
+    }
+  ],
+  "ending": {
+    "start": 4675,
+    "frames": 15,
+    "operation": "fade_to_black",
+    "note": "收黑在合成实拍时应用；透明图形层不铺黑"
+  }
+}

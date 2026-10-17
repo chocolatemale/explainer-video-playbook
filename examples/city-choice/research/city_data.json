@@ -1,0 +1,760 @@
+{
+  "上海": {
+    "annual_employee_pay": {
+      "value": 239557,
+      "unit": "CNY/year",
+      "cny": 239557.0,
+      "year": 2024,
+      "source_url": "https://tjj.sh.gov.cn/tjnj/2025tjnj/C0223.htm",
+      "note": "城镇非私营单位就业人员税前年平均工资，非全市全体劳动者中位数；未核实到同定义2025原表。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "annual_private_employee_pay": {
+      "value": 113914,
+      "unit": "CNY/year",
+      "cny": 113914.0,
+      "year": 2024,
+      "source_url": "https://tjj.sh.gov.cn/tjnj/2025tjnj/C0223.htm",
+      "note": "私营单位税前年平均工资；不是软件工程师职业工资。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "annual_nonprivate_employee_pay_2024": {
+      "value": 239557,
+      "unit": "CNY/year",
+      "cny": 239557.0,
+      "year": 2024,
+      "source_url": "https://tjj.sh.gov.cn/tjnj/2025tjnj/C0223.htm",
+      "note": "用于沪深同年同口径比较。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "annual_private_employee_pay_2024": {
+      "value": 113914,
+      "unit": "CNY/year",
+      "cny": 113914.0,
+      "year": 2024,
+      "source_url": "https://tjj.sh.gov.cn/tjnj/2025tjnj/C0223.htm",
+      "note": "用于沪深同年同口径比较。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "software_engineer_median_pay": {
+      "value": null,
+      "unit": "CNY/year",
+      "cny": null,
+      "year": null,
+      "source_url": "https://tjj.sh.gov.cn/tjnj/2025tjnj/C0223.htm",
+      "note": "未找到可核验的城市级官方软件工程师职业年薪中位数；行业平均不能代替职业中位。下列自报总包仅辅助。"
+    },
+    "software_engineer_median_total_comp_aux": {
+      "value": 666112,
+      "unit": "CNY/year",
+      "cny": 666112.0,
+      "year": 2026,
+      "source_url": "https://www.levels.fyi/t/software-engineer/locations/shanghai-chn",
+      "note": "辅助：Levels.fyi当前自报样本总包中位数，页面样本数329；不是城市总体薪酬。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "city_center_1br_rent": {
+      "value": null,
+      "unit": "CNY/month",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.numbeo.com/cost-of-living/in/Shanghai",
+      "note": "未核实到官方、统一中心区和统一房型面积定义的可比月租，主值保留null。下列众包为辅助，不能代称官方。"
+    },
+    "city_center_1br_rent_aux": {
+      "value": 6952.38,
+      "unit": "CNY/month",
+      "cny": 6952.38,
+      "year": 2026,
+      "source_url": "https://www.numbeo.com/cost-of-living/in/Shanghai",
+      "note": "辅助：Numbeo市中心一居室滚动月租。页面更新日见来源表；非同一标准面积、品质或成交租金样本。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "price_to_income_ratio": {
+      "value": null,
+      "unit": "years",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.numbeo.com/property-investment/rankings.jsp?title=2026",
+      "note": "未找到四城可统一住房类型和家庭收入定义的官方房价收入比。 补充依据：Numbeo，方法说明，2026核对：https://www.numbeo.com/property-investment/indicators_explained.jsp。"
+    },
+    "price_to_income_ratio_aux": {
+      "value": 34.2,
+      "unit": "years",
+      "cny": null,
+      "year": 2026,
+      "source_url": "https://www.numbeo.com/property-investment/rankings.jsp?title=2026",
+      "note": "辅助：固定2026版Numbeo榜单；90平方米公寓/假设1.5份平均税后工资的家庭；非实测家庭中位数。 补充依据：Numbeo，方法说明，2026核对：https://www.numbeo.com/property-investment/indicators_explained.jsp。"
+    },
+    "mean_one_way_commute": {
+      "value": 39,
+      "unit": "minutes",
+      "cny": null,
+      "year": 2024,
+      "source_url": "https://huiyan.baidu.com/boswebsite/cms/report/2025tongqin/",
+      "note": "主城区大数据估计；报告印刷第19页及第20页核对。 补充依据：中国城市规划设计研究院、百度地图，2024：https://huiyan.baidu.com/cms/report/2025tongqin/P29.png。"
+    },
+    "standard_weekly_hours": {
+      "value": 40,
+      "unit": "hours/week",
+      "cny": null,
+      "year": "2026核对",
+      "source_url": "https://fgw.sh.gov.cn/ys-laogong-1.5.2.1-h5/20240125/f173e5aa3b29400aa425188a3519b228.html",
+      "note": "法定标准工时，非实际工作时长。"
+    },
+    "leading_industries": {
+      "value": [
+        "集成电路",
+        "生物医药",
+        "人工智能",
+        "汽车制造",
+        "金融服务"
+      ],
+      "unit": "sectors",
+      "cny": null,
+      "year": "2025–2026背景",
+      "source_url": "https://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html",
+      "note": "定性选择3–5个主要/重点板块，不是四城统一口径的就业或产值排名。 补充依据：上海市政府，2021–2025规划：https://www.shanghai.gov.cn/gwk/search/content/d684ff525ead40d8a2dfa51e541a14e4。"
+    },
+    "representative_companies": {
+      "value": [
+        "上汽通用",
+        "中芯国际（上海）",
+        "联影医疗"
+      ],
+      "unit": "companies",
+      "cny": null,
+      "year": "2025–2026核对",
+      "source_url": "https://www.shanghai.gov.cn/gwk/search/content/73cb4a6134c74a29b776be60172b4c64",
+      "note": "列举当地代表企业/经营实体，不构成企业数量统计。"
+    },
+    "unicorn_count": {
+      "value": 74,
+      "unit": "companies",
+      "cny": null,
+      "year": 2026,
+      "source_url": "https://hurun.cn/zh-CN/Info/Detail?num=E9GMNPY37G4Q",
+      "note": "胡润2026榜，上海和深圳同定义同源。"
+    },
+    "listed_tech_company_count": {
+      "value": null,
+      "unit": "companies",
+      "cny": null,
+      "year": null,
+      "source_url": null,
+      "note": "未找到四城统一科技行业定义、总部地域和上市地去重规则的可靠统计；宁缺毋滥。"
+    },
+    "long_term_residency": {
+      "value": "内地外地户籍：居住证积分120分是公共服务门槛；常规居转户为持证及社保累计7年，另须纳税、职称/职业资格及社保基数等；也有人才引进、留学回国通道。",
+      "unit": "policy",
+      "cny": null,
+      "year": "截至2026-10-17",
+      "source_url": "https://jzzjf.rsj.sh.gov.cn/jzzjf/pingfen/zc2.jsp",
+      "note": "难度：常规路径耗时长，积分达标不保证落户；不适用于外国人直接获取中国国籍或永久居留。 补充依据：上海一网通办，现行页面，2026核对：https://zwdt.sh.gov.cn/govPortals/bsfw/item/e2f8557b-547a-45de-ba38-8beac177d17e。"
+    },
+    "population": {
+      "value": 24854100,
+      "unit": "persons",
+      "cny": null,
+      "year": 2025,
+      "source_url": "https://tjj.sh.gov.cn/tjgb/20260330/e0772941e8e041eaaad2df850b44ef98.html",
+      "note": "地域：全市年末常住人口。"
+    },
+    "annual_mean_temperature": {
+      "value": 18.8,
+      "unit": "degC",
+      "cny": null,
+      "year": 2024,
+      "source_url": "https://english.shanghai.gov.cn/en-Overview/20241225/ce046a2a1e754fde8c02804d6d66db18.html",
+      "note": "2024单年；亚热带季风，夏热湿、冬凉、四季分明；未核实到最新2025官方年值。"
+    },
+    "climate": {
+      "value": "亚热带季风；夏热湿、冬凉、四季分明。",
+      "unit": "description",
+      "cny": null,
+      "year": 2024,
+      "source_url": "https://english.shanghai.gov.cn/en-Overview/20241225/ce046a2a1e754fde8c02804d6d66db18.html",
+      "note": "气候描述不等于当年天气。"
+    },
+    "modeled_gross_annual": {
+      "value": 500000.0,
+      "unit": "CNY/year",
+      "cny": 500000.0,
+      "year": 2025,
+      "source_url": "https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "modeled_take_home_annual": {
+      "value": 386669.61,
+      "unit": "CNY/year",
+      "cny": 386669.61,
+      "year": 2025,
+      "source_url": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。社保=37302×12×(8%+2%+0.5%)；应税额=500000−60000−社保；个税=应税额×25%−31920。 模型本币分项：{\"gross\": 500000.0, \"social\": 47000.52, \"income_tax\": 66329.87, \"net\": 386669.61}。 补充依据：上海市人社局，2025：https://rsj.sh.gov.cn/tgsgg_17341/20250918/t0035_1435637.html；上海市政府（社保费率说明），2026核对2025延续费率：https://www.shanghai.gov.cn/nw17239/20260913/37398bbb63ad4fffa64e0b9deb0f6afc.html；上海市人社局，2025：https://rsj.sh.gov.cn/tzcjd_17352_17352/20250103/t0035_1429760.html。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "modeled_take_home_percent": {
+      "value": 77.3339,
+      "unit": "percent",
+      "cny": null,
+      "year": 2025,
+      "source_url": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。社保=37302×12×(8%+2%+0.5%)；应税额=500000−60000−社保；个税=应税额×25%−31920。 模型本币分项：{\"gross\": 500000.0, \"social\": 47000.52, \"income_tax\": 66329.87, \"net\": 386669.61}。 补充依据：上海市人社局，2025：https://rsj.sh.gov.cn/tgsgg_17341/20250918/t0035_1435637.html；上海市政府（社保费率说明），2026核对2025延续费率：https://www.shanghai.gov.cn/nw17239/20260913/37398bbb63ad4fffa64e0b9deb0f6afc.html；上海市人社局，2025：https://rsj.sh.gov.cn/tzcjd_17352_17352/20250103/t0035_1429760.html。"
+    }
+  },
+  "深圳": {
+    "annual_employee_pay": {
+      "value": 191367,
+      "unit": "CNY/year",
+      "cny": 191367.0,
+      "year": 2025,
+      "source_url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/tjsj/tjgb/content/mpost_12907800.html",
+      "note": "城镇非私营单位就业人员税前年平均工资；包括外资、国有、事业等，不能当作所有就业者工资。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "annual_private_employee_pay": {
+      "value": 99220,
+      "unit": "CNY/year",
+      "cny": 99220.0,
+      "year": 2025,
+      "source_url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/tjsj/tjgb/content/mpost_12907800.html",
+      "note": "私营单位税前年平均工资；不是软件工程师职业工资。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "annual_nonprivate_employee_pay_2024": {
+      "value": 174478,
+      "unit": "CNY/year",
+      "cny": 174478.0,
+      "year": 2024,
+      "source_url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/tjsj/tjgb/content/post_12561969.html",
+      "note": "用于沪深同年同口径比较。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "annual_private_employee_pay_2024": {
+      "value": 95217,
+      "unit": "CNY/year",
+      "cny": 95217.0,
+      "year": 2024,
+      "source_url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/tjsj/tjgb/content/post_12561969.html",
+      "note": "用于沪深同年同口径比较。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "software_engineer_median_pay": {
+      "value": null,
+      "unit": "CNY/year",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/tjsj/tjgb/content/mpost_12907800.html",
+      "note": "未找到可核验的城市级官方软件工程师职业年薪中位数；行业平均不能代替职业中位。下列自报总包仅辅助。"
+    },
+    "software_engineer_median_total_comp_aux": {
+      "value": 505231,
+      "unit": "CNY/year",
+      "cny": 505231.0,
+      "year": 2026,
+      "source_url": "https://www.levels.fyi/t/software-engineer/locations/shenzhen-chn",
+      "note": "辅助：Levels.fyi当前自报样本总包中位数，页面样本数67；不是城市总体薪酬。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "city_center_1br_rent": {
+      "value": null,
+      "unit": "CNY/month",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.numbeo.com/cost-of-living/in/Shenzhen/",
+      "note": "未核实到官方、统一中心区和统一房型面积定义的可比月租，主值保留null。下列众包为辅助，不能代称官方。"
+    },
+    "city_center_1br_rent_aux": {
+      "value": 5095.38,
+      "unit": "CNY/month",
+      "cny": 5095.38,
+      "year": 2026,
+      "source_url": "https://www.numbeo.com/cost-of-living/in/Shenzhen/",
+      "note": "辅助：Numbeo市中心一居室滚动月租。页面更新日见来源表；非同一标准面积、品质或成交租金样本。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "price_to_income_ratio": {
+      "value": null,
+      "unit": "years",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.numbeo.com/property-investment/rankings.jsp?title=2026",
+      "note": "未找到四城可统一住房类型和家庭收入定义的官方房价收入比。 补充依据：Numbeo，方法说明，2026核对：https://www.numbeo.com/property-investment/indicators_explained.jsp。"
+    },
+    "price_to_income_ratio_aux": {
+      "value": 28.5,
+      "unit": "years",
+      "cny": null,
+      "year": 2026,
+      "source_url": "https://www.numbeo.com/property-investment/rankings.jsp?title=2026",
+      "note": "辅助：固定2026版Numbeo榜单；90平方米公寓/假设1.5份平均税后工资的家庭；非实测家庭中位数。 补充依据：Numbeo，方法说明，2026核对：https://www.numbeo.com/property-investment/indicators_explained.jsp。"
+    },
+    "mean_one_way_commute": {
+      "value": 33,
+      "unit": "minutes",
+      "cny": null,
+      "year": 2024,
+      "source_url": "https://huiyan.baidu.com/boswebsite/cms/report/2025tongqin/",
+      "note": "主城区大数据估计；同上海同源同年。 补充依据：中国城市规划设计研究院、百度地图，2024：https://huiyan.baidu.com/cms/report/2025tongqin/P29.png。"
+    },
+    "standard_weekly_hours": {
+      "value": 40,
+      "unit": "hours/week",
+      "cny": null,
+      "year": "2026核对",
+      "source_url": "https://fgw.sh.gov.cn/ys-laogong-1.5.2.1-h5/20240125/f173e5aa3b29400aa425188a3519b228.html",
+      "note": "法定标准工时，非实际工作时长。"
+    },
+    "leading_industries": {
+      "value": [
+        "电子信息硬件",
+        "软件与互联网",
+        "新能源汽车",
+        "金融服务",
+        "现代物流"
+      ],
+      "unit": "sectors",
+      "cny": null,
+      "year": "2025–2026背景",
+      "source_url": "https://www.sz.gov.cn/attachment/1/1723/1723320/12848626.pdf",
+      "note": "定性选择3–5个主要/重点板块，不是四城统一口径的就业或产值排名。 补充依据：深圳政府在线（深圳特区报），2026：https://www.sz.gov.cn/cn/zjsz/fwts_1_3/tzdt_1/content/post_12650791.html。"
+    },
+    "representative_companies": {
+      "value": [
+        "华为",
+        "腾讯",
+        "比亚迪"
+      ],
+      "unit": "companies",
+      "cny": null,
+      "year": "2025–2026核对",
+      "source_url": "https://amr.sz.gov.cn/attachment/1/1722/1722088/12838942.pdf",
+      "note": "列举当地代表企业/经营实体，不构成企业数量统计。 补充依据：深圳政府在线（深圳特区报），2026：https://www.sz.gov.cn/cn/zjsz/fwts_1_3/tzdt_1/content/post_12650791.html。"
+    },
+    "unicorn_count": {
+      "value": 44,
+      "unit": "companies",
+      "cny": null,
+      "year": 2026,
+      "source_url": "https://hurun.cn/zh-CN/Info/Detail?num=E9GMNPY37G4Q",
+      "note": "胡润2026榜，上海和深圳同定义同源。"
+    },
+    "listed_tech_company_count": {
+      "value": null,
+      "unit": "companies",
+      "cny": null,
+      "year": null,
+      "source_url": null,
+      "note": "未找到四城统一科技行业定义、总部地域和上市地去重规则的可靠统计；宁缺毋滥。"
+    },
+    "long_term_residency": {
+      "value": "内地外地户籍：普通高等教育本科以上且45周岁以下，或专科以上且35周岁以下，可按人才引进条件核准；在职办理核验就业社保等；另有积分/政策迁户。",
+      "unit": "policy",
+      "cny": null,
+      "year": "截至2026-10-17",
+      "source_url": "https://ga.sz.gov.cn/ZDYW/ZDYWRK/HZFLFG/content/post_10946469.html",
+      "note": "难度：对符合学历年龄的内地申请人条件较明确；不等于外国人移民路径，也不保证即时批准。 补充依据：深圳市政务服务，2026核对：https://wsbs.sz.gov.cn/shenzhen/project/phoneGuide?code=4403090000006718601670001000423001。"
+    },
+    "population": {
+      "value": 18248500,
+      "unit": "persons",
+      "cny": null,
+      "year": 2025,
+      "source_url": "https://www.sz.gov.cn/attachment/1/1723/1723320/12848626.pdf",
+      "note": "地域：全市年末常住人口。"
+    },
+    "annual_mean_temperature": {
+      "value": 23.5,
+      "unit": "degC",
+      "cny": null,
+      "year": 2025,
+      "source_url": "https://weather.sz.gov.cn/mobile/xinxigongkai/gongzuodongtai/content/post_12635681.html",
+      "note": "2025单年；长夏短冬，季风多雨、台风影响。 补充依据：深圳市气象局，1991–2020气候期；2026页面更新：https://weather.sz.gov.cn/qixiangfuwu/qihoufuwu/qihouguanceyupinggu/qihougaikuang/。"
+    },
+    "climate": {
+      "value": "南亚热带季风；长夏短冬、夏半年多雨并受台风影响。",
+      "unit": "description",
+      "cny": null,
+      "year": 2025,
+      "source_url": "https://weather.sz.gov.cn/mobile/xinxigongkai/gongzuodongtai/content/post_12635681.html",
+      "note": "气候描述不等于当年天气。 补充依据：深圳市气象局，1991–2020气候期；2026页面更新：https://weather.sz.gov.cn/qixiangfuwu/qihoufuwu/qihouguanceyupinggu/qihougaikuang/。"
+    },
+    "modeled_gross_annual": {
+      "value": 500000.0,
+      "unit": "CNY/year",
+      "cny": 500000.0,
+      "year": 2025,
+      "source_url": "https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "modeled_take_home_annual": {
+      "value": 395274.84,
+      "unit": "CNY/year",
+      "cny": 395274.84,
+      "year": 2025,
+      "source_url": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。养老=27549×12×8%；一档医保=33666×12×2%；失业=500000×0.2%；个税=(500000−60000−社保)×25%−31920。 模型本币分项：{\"gross\": 500000.0, \"social\": 35526.88, \"income_tax\": 69198.28, \"net\": 395274.84}。 补充依据：深圳市福田区政府，2025：https://www.szft.gov.cn/bmxx_qt/qcjrlhh/tzgg/content/post_12584252.html；深圳市医保局，2025：https://hsa.sz.gov.cn/fzlm/znts/cnyc/content/post_11929040.html；深圳市医保局，2024规则；2025适用：https://www.sz.gov.cn/hdjlpt/detail?pid=2979621&via=pc；深圳市社保局，2026核对法定8%费率：https://hrss.sz.gov.cn/szsi/gzfw/ywzsk/sbgx/jbgn/content/post_12703216.html；深圳政府在线（社保年度执行情况），2025：https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_12622847.html；深圳市人社局，2025：https://www.sz.gov.cn/hdjlpt/detail?pid=3209367&vi=。 人民币按2026-10-16中间价：1 CNY/CNY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "modeled_take_home_percent": {
+      "value": 79.055,
+      "unit": "percent",
+      "cny": null,
+      "year": 2025,
+      "source_url": "https://www.chinatax.gov.cn/n810219/n810744/n3752930/n3752974/c3970366/content.html",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。养老=27549×12×8%；一档医保=33666×12×2%；失业=500000×0.2%；个税=(500000−60000−社保)×25%−31920。 模型本币分项：{\"gross\": 500000.0, \"social\": 35526.88, \"income_tax\": 69198.28, \"net\": 395274.84}。 补充依据：深圳市福田区政府，2025：https://www.szft.gov.cn/bmxx_qt/qcjrlhh/tzgg/content/post_12584252.html；深圳市医保局，2025：https://hsa.sz.gov.cn/fzlm/znts/cnyc/content/post_11929040.html；深圳市医保局，2024规则；2025适用：https://www.sz.gov.cn/hdjlpt/detail?pid=2979621&via=pc；深圳市社保局，2026核对法定8%费率：https://hrss.sz.gov.cn/szsi/gzfw/ywzsk/sbgx/jbgn/content/post_12703216.html；深圳政府在线（社保年度执行情况），2025：https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_12622847.html；深圳市人社局，2025：https://www.sz.gov.cn/hdjlpt/detail?pid=3209367&vi=。"
+    }
+  },
+  "东京": {
+    "annual_employee_pay": {
+      "value": 6788676,
+      "unit": "JPY/year",
+      "cny": 288104.62,
+      "year": 2025,
+      "source_url": "https://www.toukei.metro.tokyo.lg.jp/maikin/2025/mk25qf0001.pdf",
+      "note": "东京都5人以上事业所一般劳动者，含奖金月均565723日元×12；全职近似，非严格全年连续在岗者年收入。 人民币按2026-10-16中间价：0.042439 CNY/JPY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "software_engineer_median_pay": {
+      "value": null,
+      "unit": "JPY/year",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.toukei.metro.tokyo.lg.jp/maikin/2025/mk25qf0001.pdf",
+      "note": "未找到可核验的城市级官方软件工程师职业年薪中位数；行业平均不能代替职业中位。下列自报总包仅辅助。"
+    },
+    "software_engineer_median_total_comp_aux": {
+      "value": 8539096,
+      "unit": "JPY/year",
+      "cny": 362390.7,
+      "year": 2026,
+      "source_url": "https://www.levels.fyi/t/software-engineer/locations/greater-tokyo-area",
+      "note": "辅助：Levels.fyi当前自报样本总包中位数，页面样本数382；不是城市总体薪酬。地域是Greater Tokyo Area，宽于东京都。 人民币按2026-10-16中间价：0.042439 CNY/JPY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "city_center_1br_rent": {
+      "value": null,
+      "unit": "JPY/month",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.numbeo.com/cost-of-living/in/Tokyo",
+      "note": "未核实到官方、统一中心区和统一房型面积定义的可比月租，主值保留null。下列众包为辅助，不能代称官方。"
+    },
+    "city_center_1br_rent_aux": {
+      "value": 202375,
+      "unit": "JPY/month",
+      "cny": 8588.59,
+      "year": 2026,
+      "source_url": "https://www.numbeo.com/cost-of-living/in/Tokyo",
+      "note": "辅助：Numbeo市中心一居室滚动月租。页面更新日见来源表；非同一标准面积、品质或成交租金样本。 人民币按2026-10-16中间价：0.042439 CNY/JPY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "price_to_income_ratio": {
+      "value": null,
+      "unit": "years",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.numbeo.com/property-investment/rankings.jsp?title=2026",
+      "note": "未找到四城可统一住房类型和家庭收入定义的官方房价收入比。 补充依据：Numbeo，方法说明，2026核对：https://www.numbeo.com/property-investment/indicators_explained.jsp。"
+    },
+    "price_to_income_ratio_aux": {
+      "value": 15.2,
+      "unit": "years",
+      "cny": null,
+      "year": 2026,
+      "source_url": "https://www.numbeo.com/property-investment/rankings.jsp?title=2026",
+      "note": "辅助：固定2026版Numbeo榜单；90平方米公寓/假设1.5份平均税后工资的家庭；非实测家庭中位数。 补充依据：Numbeo，方法说明，2026核对：https://www.numbeo.com/property-investment/indicators_explained.jsp。"
+    },
+    "mean_one_way_commute": {
+      "value": null,
+      "unit": "minutes",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.stat.go.jp/data/shakai/2021/pdf/gaiyoua.pdf",
+      "note": "未核实到同口径单程上班均值；2021官方95分钟是全天通勤通学时间，不能除二冒充所求指标。"
+    },
+    "standard_weekly_hours": {
+      "value": 40,
+      "unit": "hours/week",
+      "cny": null,
+      "year": "2026核对",
+      "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/roudouzikan/index.html",
+      "note": "法定通常工时，非实际工作时长。"
+    },
+    "leading_industries": {
+      "value": [
+        "IT与通信",
+        "金融与金融科技",
+        "医疗生命科学",
+        "文娱与电子"
+      ],
+      "unit": "sectors",
+      "cny": null,
+      "year": "2025–2026背景",
+      "source_url": "https://www.investtokyo.metro.tokyo.lg.jp/jp/industries/index.html",
+      "note": "定性选择3–5个主要/重点板块，不是四城统一口径的就业或产值排名。 补充依据：Rakuten Group，2025：https://global.rakuten.com/corp/about/；Sony Group，2026：https://www.sony.com/en/SonyInfo/CorporateInfo/data/。"
+    },
+    "representative_companies": {
+      "value": [
+        "Sony Group",
+        "SoftBank Group",
+        "Rakuten Group"
+      ],
+      "unit": "companies",
+      "cny": null,
+      "year": "2025–2026核对",
+      "source_url": "https://www.sony.com/en/SonyInfo/CorporateInfo/data/",
+      "note": "列举当地代表企业/经营实体，不构成企业数量统计。 补充依据：SoftBank Group，2026页面核对：https://group.softbank/en/about/profile；Rakuten Group，2025：https://global.rakuten.com/corp/about/。"
+    },
+    "unicorn_count": {
+      "value": null,
+      "unit": "companies",
+      "cny": null,
+      "year": null,
+      "source_url": "https://hurun.cn/zh-CN/Info/Detail?num=E9GMNPY37G4Q",
+      "note": "未取得可审计完整城市/县界清单；东京未见于可核验文本表，南湾需逐公司按县界归并，不能用旧金山市或全湾区数量代填；null不是0。"
+    },
+    "listed_tech_company_count": {
+      "value": null,
+      "unit": "companies",
+      "cny": null,
+      "year": null,
+      "source_url": null,
+      "note": "未找到四城统一科技行业定义、总部地域和上市地去重规则的可靠统计；宁缺毋滥。"
+    },
+    "long_term_residency": {
+      "value": "外国人：匹配雇主及专业资格的工作居留/高度人才；高度人才70分维持3年、80分维持1年可按特例申请永住。经营管理新申请须资本金等3000万日元及至少1名符合条件常勤员工，另有能力/经历/事业计划要求。",
+      "unit": "policy",
+      "cny": null,
+      "year": "截至2026-10-17",
+      "source_url": "https://www.moj.go.jp/isa/applications/resources/newimmiact_3_system_index.html?hl=ja&lang=ja",
+      "note": "难度：技术工作路径取决于工作匹配；永住仍审查生计、税社保等，1/3年为居住资格年限，不是审结承诺；经营管理是高门槛实际经营，资本不是缴给政府的手续费。 补充依据：日本出入国在留管理厅，2026：https://www.moj.go.jp/isa/10_00279.html?lang=ne；日本出入国在留管理厅，2025：https://www.moj.go.jp/isa/content/001448070.pdf。"
+    },
+    "business_manager_minimum_capital": {
+      "value": 30000000,
+      "unit": "JPY",
+      "cny": 1273170.0,
+      "year": 2025,
+      "source_url": "https://www.moj.go.jp/isa/content/001448070.pdf",
+      "note": "2025-10-16新标准；这是经营资本金等门槛，不是申请费。 人民币按2026-10-16中间价：0.042439 CNY/JPY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "population": {
+      "value": 14296683,
+      "unit": "persons",
+      "cny": null,
+      "year": 2026,
+      "source_url": "https://www.toukei.metro.tokyo.lg.jp/jsuikei/2026/js269f0100.pdf",
+      "note": "地域：东京都全域；2026-09-01速報基准推计，非大东京圈。"
+    },
+    "annual_mean_temperature": {
+      "value": 15.8,
+      "unit": "degC",
+      "cny": null,
+      "year": "1991–2020",
+      "source_url": "https://www.data.jma.go.jp/stats/en/normal/normal.html",
+      "note": "Tokyo气象站气候正常值；夏季暖湿、冬季较凉；不是2025年观测。"
+    },
+    "climate": {
+      "value": "夏季暖湿、冬季较凉，季节差异明显。",
+      "unit": "description",
+      "cny": null,
+      "year": "1991–2020",
+      "source_url": "https://www.data.jma.go.jp/stats/en/normal/normal.html",
+      "note": "气候描述不等于当年天气。"
+    },
+    "modeled_gross_annual": {
+      "value": 11781615.97,
+      "unit": "JPY/year",
+      "cny": 500000.0,
+      "year": 2025,
+      "source_url": "https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。 人民币按2026-10-16中间价：0.042439 CNY/JPY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "modeled_take_home_annual": {
+      "value": 8409720.14,
+      "unit": "JPY/year",
+      "cny": 356900.11,
+      "year": 2025,
+      "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。医保近似工资×4.955%，养老金650000×12×9.15%，雇用险工资×0.55%；未逐月套医保标准报酬档次。工资所得扣除195万、国税基本扣除58万、住民税基本扣除43万日元；国税23%减636000再乘1.021；住民税10%+均等割/森林税5000−调整控除2500，含次年住民税稳态。 模型本币分项：{\"gross\": 11781615.97, \"social\": 1362277.96, \"income_tax\": 1203217.87, \"resident_tax\": 806400.0, \"net\": 8409720.14}。 补充依据：日本国税厅NTA，2025：https://www.nta.go.jp/english/taxes/individual/12012.htm；日本国税厅NTA，2025：https://www.nta.go.jp/publication/pamph/gensen/nencho2025/pdf/302_en.pdf；东京都主税局，2025所得对应次年稳态税负：https://www.tax.metro.tokyo.lg.jp/kazei/life/kojin_ju；全国健康保险协会，2025：https://www.kyoukaikenpo.or.jp/assets/13tokyo_7.pdf；日本年金机构，2017起费率；2025适用：https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20150515-01.html；日本年金机构，2020起上限；2025适用：https://www.nenkin.go.jp/service/kounen/hokenryo/ryogaku/ryogakuhyo/20200825.html；日本厚生劳动省，2025：https://www.mhlw.go.jp/content/001401966.pdf。 人民币按2026-10-16中间价：0.042439 CNY/JPY；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "modeled_take_home_percent": {
+      "value": 71.38,
+      "unit": "percent",
+      "cny": null,
+      "year": 2025,
+      "source_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。医保近似工资×4.955%，养老金650000×12×9.15%，雇用险工资×0.55%；未逐月套医保标准报酬档次。工资所得扣除195万、国税基本扣除58万、住民税基本扣除43万日元；国税23%减636000再乘1.021；住民税10%+均等割/森林税5000−调整控除2500，含次年住民税稳态。 模型本币分项：{\"gross\": 11781615.97, \"social\": 1362277.96, \"income_tax\": 1203217.87, \"resident_tax\": 806400.0, \"net\": 8409720.14}。 补充依据：日本国税厅NTA，2025：https://www.nta.go.jp/english/taxes/individual/12012.htm；日本国税厅NTA，2025：https://www.nta.go.jp/publication/pamph/gensen/nencho2025/pdf/302_en.pdf；东京都主税局，2025所得对应次年稳态税负：https://www.tax.metro.tokyo.lg.jp/kazei/life/kojin_ju；全国健康保险协会，2025：https://www.kyoukaikenpo.or.jp/assets/13tokyo_7.pdf；日本年金机构，2017起费率；2025适用：https://www.nenkin.go.jp/service/kounen/hokenryo/hoshu/20150515-01.html；日本年金机构，2020起上限；2025适用：https://www.nenkin.go.jp/service/kounen/hokenryo/ryogaku/ryogakuhyo/20200825.html；日本厚生劳动省，2025：https://www.mhlw.go.jp/content/001401966.pdf。"
+    }
+  },
+  "硅谷（南湾）": {
+    "annual_employee_pay": {
+      "value": 119225.6,
+      "unit": "USD/year",
+      "cny": 801434.48,
+      "year": 2025,
+      "source_url": "https://www.bls.gov/regions/west/news-release/occupationalemploymentandwages_sanjose.htm",
+      "note": "San Jose-Sunnyvale-Santa Clara MSA全职业平均时薪57.32×2080小时年化，非实际全职者全年实收，OEWS同时调查全/兼职岗位。 人民币按2026-10-16中间价：6.7220 CNY/USD；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "software_engineer_median_pay": {
+      "value": 213110,
+      "unit": "USD/year",
+      "cny": 1432525.42,
+      "year": 2025,
+      "source_url": "https://www.onetonline.org/link/localwages/15-1252.00?zip=94025",
+      "note": "BLS职业15-1252 Software Developers中位工资，O*NET完整表San Jose行核验；不含通常未计入OEWS的股权总包，不能与Levels.fyi总包混排行。 补充依据：美国BLS，2025：https://www.bls.gov/regions/west/news-release/occupationalemploymentandwages_sanjose.htm。 人民币按2026-10-16中间价：6.7220 CNY/USD；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "software_engineer_median_total_comp_aux": {
+      "value": 233750,
+      "unit": "USD/year",
+      "cny": 1571267.5,
+      "year": 2026,
+      "source_url": "https://www.levels.fyi/t/software-engineer/locations/san-jose-usa",
+      "note": "辅助：Levels.fyi当前自报样本总包中位数，页面样本数1953；不是城市总体薪酬。地域为San Jose市，不是全湾区。 人民币按2026-10-16中间价：6.7220 CNY/USD；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "city_center_1br_rent": {
+      "value": null,
+      "unit": "USD/month",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.numbeo.com/cost-of-living/in/San-Jose",
+      "note": "未核实到官方、统一中心区和统一房型面积定义的可比月租，主值保留null。下列众包为辅助，不能代称官方。"
+    },
+    "city_center_1br_rent_aux": {
+      "value": 3085.56,
+      "unit": "USD/month",
+      "cny": 20741.13,
+      "year": 2026,
+      "source_url": "https://www.numbeo.com/cost-of-living/in/San-Jose",
+      "note": "辅助：Numbeo市中心一居室滚动月租。页面更新日见来源表；非同一标准面积、品质或成交租金样本。仅San Jose市。 人民币按2026-10-16中间价：6.7220 CNY/USD；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "price_to_income_ratio": {
+      "value": null,
+      "unit": "years",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.numbeo.com/property-investment/rankings.jsp?title=2026",
+      "note": "未找到四城可统一住房类型和家庭收入定义的官方房价收入比。 补充依据：Numbeo，方法说明，2026核对：https://www.numbeo.com/property-investment/indicators_explained.jsp。"
+    },
+    "price_to_income_ratio_aux": {
+      "value": 8.4,
+      "unit": "years",
+      "cny": null,
+      "year": 2026,
+      "source_url": "https://www.numbeo.com/property-investment/rankings.jsp?title=2026",
+      "note": "辅助：固定2026版Numbeo榜单；90平方米公寓/假设1.5份平均税后工资的家庭；非实测家庭中位数。 补充依据：Numbeo，方法说明，2026核对：https://www.numbeo.com/property-investment/indicators_explained.jsp。"
+    },
+    "mean_one_way_commute": {
+      "value": 26.2,
+      "unit": "minutes",
+      "cny": null,
+      "year": "2020–2024",
+      "source_url": "https://www.census.gov/quickfacts/fact/table/santaclaracountycalifornia/PST045225",
+      "note": "Santa Clara县ACS五年合并估计，16岁以上实际上班者，排除在家工作；不是2025单年，也不是整个湾区。"
+    },
+    "standard_weekly_hours": {
+      "value": 40,
+      "unit": "hours/week",
+      "cny": null,
+      "year": "2026核对",
+      "source_url": "https://www.dir.ca.gov/dlse/faq_overtime.htm",
+      "note": "加州一般非豁免雇员周加班门槛，非最高工时限制；符合条件的软件人员可豁免。 补充依据：加州工业关系部DIR，2026：https://www.dir.ca.gov/OPRL/ComputerSoftware.htm。"
+    },
+    "leading_industries": {
+      "value": [
+        "半导体与硬件",
+        "软件及AI",
+        "先进制造",
+        "医疗健康"
+      ],
+      "unit": "sectors",
+      "cny": null,
+      "year": "2025–2026背景",
+      "source_url": "https://www.sanjoseca.gov/home/showpublisheddocument/120890/638812607480530000",
+      "note": "定性选择3–5个主要/重点板块，不是四城统一口径的就业或产值排名。 补充依据：美国BLS，2025：https://www.bls.gov/regions/west/news-release/occupationalemploymentandwages_sanjose.htm。"
+    },
+    "representative_companies": {
+      "value": [
+        "NVIDIA（Santa Clara）",
+        "Apple（Cupertino）",
+        "Adobe（San Jose）"
+      ],
+      "unit": "companies",
+      "cny": null,
+      "year": "2025–2026核对",
+      "source_url": "https://www.nvidia.com/en-us/contact/",
+      "note": "列举当地代表企业/经营实体，不构成企业数量统计。 补充依据：Apple，2026页面核对：https://www.apple.com/contact/；Adobe，2026页面核对：https://www.adobe.com/about-adobe/contact.html。"
+    },
+    "unicorn_count": {
+      "value": null,
+      "unit": "companies",
+      "cny": null,
+      "year": null,
+      "source_url": "https://hurun.cn/zh-CN/Info/Detail?num=E9GMNPY37G4Q",
+      "note": "未取得可审计完整城市/县界清单；东京未见于可核验文本表，南湾需逐公司按县界归并，不能用旧金山市或全湾区数量代填；null不是0。"
+    },
+    "listed_tech_company_count": {
+      "value": null,
+      "unit": "companies",
+      "cny": null,
+      "year": null,
+      "source_url": null,
+      "note": "未找到四城统一科技行业定义、总部地域和上市地去重规则的可靠统计；宁缺毋滥。"
+    },
+    "long_term_residency": {
+      "value": "外国人：雇主申请H-1B，名额受限部分需遴选；FY2027采用加权规则。长期定居另走职业移民等路径，受资格与出生地排期影响。2025公告曾要求部分新境外H-1B请愿付款10万美元；2026虽宣布延期，实施政策被法院阻止，当前不能写成必缴。",
+      "unit": "policy",
+      "cny": null,
+      "year": "截至2026-10-17",
+      "source_url": "https://content.govdelivery.com/accounts/USDHSCIS/bulletins/406da02",
+      "note": "难度：雇主、名额及身份转换不确定；不填统一中签率或绿卡等待年数。最后可核对法院裁定2026-09-30、执行交叉说明2026-10-01；收费状态截至2026-10-17核查。 补充依据：美国白宫，2025-09-19：https://www.whitehouse.gov/presidential-actions/2025/09/restriction-on-entry-of-certain-nonimmigrant-workers/；美国白宫，2026-09-18：https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/；美国加州北区联邦地区法院（GovInfo原文），2026-09-30：https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf；密歇根大学International Center，2026-10-01：https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked；美国USCIS，2026核对：https://www.uscis.gov/working-in-the-united-states/permanent-workers/employment-based-immigration-second-preference-eb-2。"
+    },
+    "h1b_announced_additional_payment": {
+      "value": 100000,
+      "unit": "USD",
+      "cny": 672200.0,
+      "year": 2025,
+      "source_url": "https://www.whitehouse.gov/presidential-actions/2025/09/restriction-on-entry-of-certain-nonimmigrant-workers/",
+      "note": "历史公告名义付款要求；2026延长文字已核实，但当前实施被阻止，不代表实际必缴。 补充依据：美国白宫，2026-09-18：https://www.whitehouse.gov/presidential-actions/2026/09/restriction-on-entry-of-certain-nonimmigrant-workers-faad/；美国加州北区联邦地区法院（GovInfo原文），2026-09-30：https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf。 人民币按2026-10-16中间价：6.7220 CNY/USD；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "h1b_additional_payment_currently_collectible": {
+      "value": 0,
+      "unit": "USD",
+      "cny": 0.0,
+      "year": 2026,
+      "source_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_25-cv-08454/pdf/USCOURTS-cand-4_25-cv-08454-17.pdf",
+      "note": "只表示该10万美元附加要求当前被阻止，其他正常签证和申请费用仍可能存在；不表示全部申请费用为0。 补充依据：密歇根大学International Center，2026-10-01：https://internationalcenter.umich.edu/about/news/100000-h-1b-executive-order-extended-fee-remains-blocked。 人民币按2026-10-16中间价：6.7220 CNY/USD；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "population": {
+      "value": 1914391,
+      "unit": "persons",
+      "cny": null,
+      "year": 2025,
+      "source_url": "https://www.census.gov/quickfacts/fact/table/santaclaracountycalifornia/PST045225",
+      "note": "地域：Santa Clara县，2025-07-01人口估计；并非San Jose市或全湾区。"
+    },
+    "annual_mean_temperature": {
+      "value": null,
+      "unit": "degC",
+      "cny": null,
+      "year": null,
+      "source_url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-259.pdf",
+      "note": "未核实到近期同口径年均温；保留气候描述：San Jose地中海型，夏暖干燥、冬凉多雨。"
+    },
+    "climate": {
+      "value": "保留气候描述：San Jose地中海型，夏暖干燥、冬凉多雨。",
+      "unit": "description",
+      "cny": null,
+      "year": "2012气候说明",
+      "source_url": "https://www.weather.gov/media/wrh/online_publications/TMs/TM-259.pdf",
+      "note": "气候描述不等于当年天气。"
+    },
+    "modeled_gross_annual": {
+      "value": 74382.62,
+      "unit": "USD/year",
+      "cny": 499999.97,
+      "year": 2025,
+      "source_url": "https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。 人民币按2026-10-16中间价：6.7220 CNY/USD；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "modeled_take_home_annual": {
+      "value": 57261.4,
+      "unit": "USD/year",
+      "cny": 384911.13,
+      "year": 2025,
+      "source_url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。Single；联邦标准扣除15750美元，州5706美元及个人抵免153；联邦/州累进税；FICA6.2%+1.45%与加州SDI1.2%；未按不足100000美元时的50美元组距税表取整，结果为近似。 模型本币分项：{\"gross\": 74382.62, \"social\": 6582.86, \"income_tax\": 7813.18, \"state_tax\": 2725.18, \"net\": 57261.4}。 补充依据：美国IRS，2025：https://www.irs.gov/pub/irs-prior/i1040gi--2025.pdf；加州FTB，2025：https://www.ftb.ca.gov/forms/2025/2025-540-tax-rate-schedules.pdf；加州FTB，2025：https://www.ftb.ca.gov/forms/2025/2025-540-booklet.html；加州FTB，2025：https://www.ftb.ca.gov/forms/2025/2025-540.pdf；美国IRS，2025模型适用：https://www.irs.gov/taxtopics/tc751；美国SSA，2025：https://www.ssa.gov/oact/cola/cbb.html；加州EDD，2025：https://edd.ca.gov/en/payroll_taxes/rates_and_withholding/。 人民币按2026-10-16中间价：6.7220 CNY/USD；https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760。"
+    },
+    "modeled_take_home_percent": {
+      "value": 76.9822,
+      "unit": "percent",
+      "cny": null,
+      "year": 2025,
+      "source_url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets",
+      "note": "估算：30岁、单身无抚养、当地全年税务居民、工资均分12个月、无奖金股权及其他收入，前一年同薪；统一2025税制及2025下半年费率标准年化；非2026现行逐月工资单。只扣雇员强制社保与个税；中国未扣住房公积金（也未使用其税前扣除），美国未扣商业医保/401(k)，各地未用额外租房、子女等扣除。Single；联邦标准扣除15750美元，州5706美元及个人抵免153；联邦/州累进税；FICA6.2%+1.45%与加州SDI1.2%；未按不足100000美元时的50美元组距税表取整，结果为近似。 模型本币分项：{\"gross\": 74382.62, \"social\": 6582.86, \"income_tax\": 7813.18, \"state_tax\": 2725.18, \"net\": 57261.4}。 补充依据：美国IRS，2025：https://www.irs.gov/pub/irs-prior/i1040gi--2025.pdf；加州FTB，2025：https://www.ftb.ca.gov/forms/2025/2025-540-tax-rate-schedules.pdf；加州FTB，2025：https://www.ftb.ca.gov/forms/2025/2025-540-booklet.html；加州FTB，2025：https://www.ftb.ca.gov/forms/2025/2025-540.pdf；美国IRS，2025模型适用：https://www.irs.gov/taxtopics/tc751；美国SSA，2025：https://www.ssa.gov/oact/cola/cbb.html；加州EDD，2025：https://edd.ca.gov/en/payroll_taxes/rates_and_withholding/。"
+    }
+  }
+}

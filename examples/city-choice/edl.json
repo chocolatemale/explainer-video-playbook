@@ -1,0 +1,658 @@
+{
+  "fps": 25,
+  "shots": [
+    {
+      "seg": "00a",
+      "clip": "39515873",
+      "rec": 0,
+      "frames": 23,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00a",
+      "clip": "35987650",
+      "rec": 23,
+      "frames": 23,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00a",
+      "clip": "35488258",
+      "rec": 46,
+      "frames": 23,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00a",
+      "clip": "33249268",
+      "rec": 69,
+      "frames": 24,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00b",
+      "clip": "30837581",
+      "rec": 93,
+      "frames": 151,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00c",
+      "clip": "8266171",
+      "rec": 244,
+      "frames": 97,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "00c",
+      "clip": "9068776",
+      "rec": 341,
+      "frames": 97,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "01",
+      "clip": "13175371",
+      "rec": 551,
+      "frames": 214,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "01",
+      "clip": "19834302",
+      "rec": 765,
+      "frames": 214,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02a",
+      "clip": "6326929",
+      "rec": 979,
+      "frames": 55,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02b",
+      "clip": "29545807",
+      "rec": 1034,
+      "frames": 258,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02c",
+      "clip": "29545812",
+      "rec": 1292,
+      "frames": 388,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02d",
+      "clip": "31979796",
+      "rec": 1680,
+      "frames": 68,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02d",
+      "clip": "36219113",
+      "rec": 1748,
+      "frames": 68,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02e",
+      "clip": "4553298",
+      "rec": 1816,
+      "frames": 110,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "02e",
+      "clip": "8960333",
+      "rec": 1926,
+      "frames": 111,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "03a",
+      "clip": "6804109",
+      "rec": 2037,
+      "frames": 55,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "03b",
+      "clip": "33751774",
+      "rec": 2092,
+      "frames": 44,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "03b",
+      "clip": "35720033",
+      "rec": 2136,
+      "frames": 45,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "03b",
+      "clip": "29575342",
+      "rec": 2181,
+      "frames": 44,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "03b",
+      "clip": "26390903",
+      "rec": 2225,
+      "frames": 45,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "03c",
+      "clip": "9702205",
+      "rec": 2270,
+      "frames": 247,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "03d",
+      "clip": "16407855",
+      "rec": 2517,
+      "frames": 113,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04a",
+      "clip": "29610852",
+      "rec": 2630,
+      "frames": 55,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04b",
+      "clip": "19347491",
+      "rec": 2685,
+      "frames": 75,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04b",
+      "clip": "35969847",
+      "rec": 2760,
+      "frames": 76,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04b",
+      "clip": "18552655",
+      "rec": 2836,
+      "frames": 75,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04b",
+      "clip": "34777715",
+      "rec": 2911,
+      "frames": 76,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "04c",
+      "clip": "30364860",
+      "rec": 2987,
+      "frames": 172,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "05a",
+      "clip": "7010153",
+      "rec": 3159,
+      "frames": 55,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "05b",
+      "clip": "29576553",
+      "rec": 3214,
+      "frames": 150,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "05b",
+      "clip": "7009788",
+      "rec": 3364,
+      "frames": 151,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "05b",
+      "clip": "3740041",
+      "rec": 3515,
+      "frames": 150,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "05b",
+      "clip": "37176642",
+      "rec": 3665,
+      "frames": 151,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "06",
+      "clip": "30339963",
+      "rec": 3816,
+      "frames": 143,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "06",
+      "clip": "7578842",
+      "rec": 3959,
+      "frames": 143,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "06",
+      "clip": "6300455",
+      "rec": 4102,
+      "frames": 143,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "06",
+      "clip": "6182047",
+      "rec": 4245,
+      "frames": 143,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "07",
+      "clip": "39410948",
+      "rec": 4388,
+      "frames": 75,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "07",
+      "clip": "35173187",
+      "rec": 4463,
+      "frames": 76,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "07",
+      "clip": "20162399",
+      "rec": 4539,
+      "frames": 75,
+      "src_in_sec": 1.0
+    },
+    {
+      "seg": "07",
+      "clip": "10184687",
+      "rec": 4614,
+      "frames": 76,
+      "src_in_sec": 1.0
+    }
+  ],
+  "overlays": [
+    {
+      "seg": "00a",
+      "id": "city_sh",
+      "rec": 0,
+      "frames": 23
+    },
+    {
+      "seg": "00a",
+      "id": "city_sz",
+      "rec": 23,
+      "frames": 23
+    },
+    {
+      "seg": "00a",
+      "id": "city_tk",
+      "rec": 46,
+      "frames": 23
+    },
+    {
+      "seg": "00a",
+      "id": "city_sv",
+      "rec": 69,
+      "frames": 24
+    },
+    {
+      "seg": "00b",
+      "id": "q_which",
+      "rec": 93,
+      "frames": 151
+    },
+    {
+      "seg": "00c",
+      "id": "hook",
+      "rec": 244,
+      "frames": 194
+    },
+    {
+      "seg": "00d",
+      "id": "title",
+      "rec": 438,
+      "frames": 113
+    },
+    {
+      "seg": "01",
+      "id": "method",
+      "rec": 551,
+      "frames": 428
+    },
+    {
+      "seg": "02a",
+      "id": "ch_money",
+      "rec": 979,
+      "frames": 55
+    },
+    {
+      "seg": "02b",
+      "id": "salary",
+      "rec": 1034,
+      "frames": 258
+    },
+    {
+      "seg": "02c",
+      "id": "keep",
+      "rec": 1292,
+      "frames": 388
+    },
+    {
+      "seg": "02d",
+      "id": "rent_tk",
+      "rec": 1680,
+      "frames": 136
+    },
+    {
+      "seg": "02e",
+      "id": "house",
+      "rec": 1816,
+      "frames": 221
+    },
+    {
+      "seg": "03a",
+      "id": "ch_chance",
+      "rec": 2037,
+      "frames": 55
+    },
+    {
+      "seg": "03b",
+      "id": "ind_sh",
+      "rec": 2092,
+      "frames": 44
+    },
+    {
+      "seg": "03b",
+      "id": "ind_sz",
+      "rec": 2136,
+      "frames": 45
+    },
+    {
+      "seg": "03b",
+      "id": "ind_tk",
+      "rec": 2181,
+      "frames": 44
+    },
+    {
+      "seg": "03b",
+      "id": "ind_sv",
+      "rec": 2225,
+      "frames": 45
+    },
+    {
+      "seg": "03c",
+      "id": "unicorn",
+      "rec": 2270,
+      "frames": 247
+    },
+    {
+      "seg": "03d",
+      "id": "density",
+      "rec": 2517,
+      "frames": 113
+    },
+    {
+      "seg": "04a",
+      "id": "ch_time",
+      "rec": 2630,
+      "frames": 55
+    },
+    {
+      "seg": "04b",
+      "id": "commute",
+      "rec": 2685,
+      "frames": 302
+    },
+    {
+      "seg": "04c",
+      "id": "clock",
+      "rec": 2987,
+      "frames": 172
+    },
+    {
+      "seg": "05a",
+      "id": "ch_gate",
+      "rec": 3159,
+      "frames": 55
+    },
+    {
+      "seg": "05b",
+      "id": "gate",
+      "rec": 3214,
+      "frames": 602
+    },
+    {
+      "seg": "06",
+      "id": "weights",
+      "rec": 3816,
+      "frames": 572
+    },
+    {
+      "seg": "07",
+      "id": "end",
+      "rec": 4388,
+      "frames": 302
+    }
+  ],
+  "vo": [
+    {
+      "id": "00a",
+      "path": "vo/wav/00a.wav",
+      "rec": 6
+    },
+    {
+      "id": "00b",
+      "path": "vo/wav/00b.wav",
+      "rec": 99
+    },
+    {
+      "id": "00c",
+      "path": "vo/wav/00c.wav",
+      "rec": 250
+    },
+    {
+      "id": "00d",
+      "path": "vo/wav/00d.wav",
+      "rec": 444
+    },
+    {
+      "id": "01",
+      "path": "vo/wav/01.wav",
+      "rec": 557
+    },
+    {
+      "id": "02b",
+      "path": "vo/wav/02b.wav",
+      "rec": 1040
+    },
+    {
+      "id": "02c",
+      "path": "vo/wav/02c.wav",
+      "rec": 1298
+    },
+    {
+      "id": "02d",
+      "path": "vo/wav/02d.wav",
+      "rec": 1686
+    },
+    {
+      "id": "02e",
+      "path": "vo/wav/02e.wav",
+      "rec": 1823
+    },
+    {
+      "id": "03b",
+      "path": "vo/wav/03b.wav",
+      "rec": 2098
+    },
+    {
+      "id": "03c",
+      "path": "vo/wav/03c.wav",
+      "rec": 2277
+    },
+    {
+      "id": "03d",
+      "path": "vo/wav/03d.wav",
+      "rec": 2523
+    },
+    {
+      "id": "04b",
+      "path": "vo/wav/04b.wav",
+      "rec": 2691
+    },
+    {
+      "id": "04c",
+      "path": "vo/wav/04c.wav",
+      "rec": 2993
+    },
+    {
+      "id": "05b",
+      "path": "vo/wav/05b.wav",
+      "rec": 3220
+    },
+    {
+      "id": "06",
+      "path": "vo/wav/06.wav",
+      "rec": 3823
+    },
+    {
+      "id": "07",
+      "path": "vo/wav/07.wav",
+      "rec": 4394
+    }
+  ],
+  "segments": [
+    {
+      "seg": "00a",
+      "start": 0,
+      "frames": 93
+    },
+    {
+      "seg": "00b",
+      "start": 93,
+      "frames": 151
+    },
+    {
+      "seg": "00c",
+      "start": 244,
+      "frames": 194
+    },
+    {
+      "seg": "00d",
+      "start": 438,
+      "frames": 113
+    },
+    {
+      "seg": "01",
+      "start": 551,
+      "frames": 428
+    },
+    {
+      "seg": "02a",
+      "start": 979,
+      "frames": 55
+    },
+    {
+      "seg": "02b",
+      "start": 1034,
+      "frames": 258
+    },
+    {
+      "seg": "02c",
+      "start": 1292,
+      "frames": 388
+    },
+    {
+      "seg": "02d",
+      "start": 1680,
+      "frames": 136
+    },
+    {
+      "seg": "02e",
+      "start": 1816,
+      "frames": 221
+    },
+    {
+      "seg": "03a",
+      "start": 2037,
+      "frames": 55
+    },
+    {
+      "seg": "03b",
+      "start": 2092,
+      "frames": 178
+    },
+    {
+      "seg": "03c",
+      "start": 2270,
+      "frames": 247
+    },
+    {
+      "seg": "03d",
+      "start": 2517,
+      "frames": 113
+    },
+    {
+      "seg": "04a",
+      "start": 2630,
+      "frames": 55
+    },
+    {
+      "seg": "04b",
+      "start": 2685,
+      "frames": 302
+    },
+    {
+      "seg": "04c",
+      "start": 2987,
+      "frames": 172
+    },
+    {
+      "seg": "05a",
+      "start": 3159,
+      "frames": 55
+    },
+    {
+      "seg": "05b",
+      "start": 3214,
+      "frames": 602
+    },
+    {
+      "seg": "06",
+      "start": 3816,
+      "frames": 572
+    },
+    {
+      "seg": "07",
+      "start": 4388,
+      "frames": 302
+    }
+  ],
+  "total_frames": 4690
+}

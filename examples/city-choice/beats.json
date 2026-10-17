@@ -1,0 +1,3585 @@
+{
+  "version": 1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 25,
+  "lead_seconds": 0.25,
+  "tail_seconds": 0.45,
+  "fade_seconds": 1.2,
+  "variables": {
+    "CITIES": [
+      "上海",
+      "深圳",
+      "东京",
+      "硅谷"
+    ],
+    "COLORS": [
+      "#E8392F",
+      "#1FA971",
+      "#3570E8",
+      "#FFE03A"
+    ]
+  },
+  "stills": [
+    "39515873",
+    "35987650",
+    "35488258",
+    "33249268",
+    "6326929",
+    "6804109",
+    "29610852",
+    "29545807",
+    "33751774",
+    "35720033",
+    "31979796",
+    "39410948",
+    "35987653",
+    "20162399",
+    "10184687"
+  ],
+  "layouts": {
+    "weights": [
+      {
+        "type": "set",
+        "name": "state",
+        "value": {
+          "expr": "stage(sid, f, ['weights', 'young', 'thirty', 'kids']) or 'weights'"
+        }
+      },
+      {
+        "type": "set",
+        "name": "age",
+        "value": {
+          "expr": "event_age(sid, state, f)"
+        }
+      },
+      {
+        "type": "set",
+        "name": "u",
+        "value": {
+          "expr": "ease(age / 12.5)"
+        }
+      },
+      {
+        "type": "set",
+        "name": "widths",
+        "value": {
+          "expr": "{'weights': [1100] * 4, 'young': [490, 1100, 425, 380], 'thirty': [1100, 592, 508, 474], 'kids': [534, 404, 1003, 1100]}"
+        }
+      },
+      {
+        "type": "set",
+        "name": "prev",
+        "value": {
+          "expr": "{'weights': 'weights', 'young': 'weights', 'thirty': 'young', 'kids': 'thirty'}[state]"
+        }
+      },
+      {
+        "type": "set",
+        "name": "selected",
+        "value": {
+          "expr": "{'weights': [], 'young': [1], 'thirty': [0], 'kids': [2, 3]}[state]"
+        }
+      },
+      {
+        "type": "set",
+        "name": "title_w",
+        "value": {
+          "expr": "measure('分量会变', 64)"
+        }
+      },
+      {
+        "type": "set",
+        "name": "badge",
+        "value": {
+          "expr": "{'young': '20 多岁', 'thirty': '30 岁上下', 'kids': '有了孩子'}.get(state)"
+        }
+      },
+      {
+        "type": "set",
+        "name": "badge_w",
+        "value": {
+          "expr": "measure(badge, 48) + 56 if badge else 0"
+        }
+      },
+      {
+        "type": "set",
+        "name": "total",
+        "value": {
+          "expr": "title_w + (40 + badge_w if badge else 0)"
+        }
+      },
+      {
+        "type": "set",
+        "name": "left",
+        "value": {
+          "expr": "960 - total / 2"
+        }
+      },
+      {
+        "type": "text",
+        "target": "im",
+        "args": [
+          "分量会变",
+          {
+            "expr": "left + title_w / 2"
+          },
+          220,
+          64
+        ],
+        "kwargs": {}
+      },
+      {
+        "type": "if",
+        "condition": "badge",
+        "then": [
+          {
+            "type": "chip-k",
+            "target": "im",
+            "args": [
+              {
+                "expr": "badge"
+              },
+              {
+                "expr": "left + title_w + 40 + badge_w / 2"
+              },
+              220,
+              48
+            ],
+            "kwargs": {
+              "age": {
+                "expr": "age"
+              }
+            }
+          }
+        ],
+        "else": []
+      },
+      {
+        "type": "repeat",
+        "names": "(i, label)",
+        "items": {
+          "expr": "enumerate(['钱', '机会', '时间', '门'])"
+        },
+        "elements": [
+          {
+            "type": "set",
+            "name": "y",
+            "value": {
+              "expr": "355 + i * 145"
+            }
+          },
+          {
+            "type": "text",
+            "target": "im",
+            "args": [
+              {
+                "expr": "label"
+              },
+              375,
+              {
+                "expr": "y"
+              },
+              48
+            ],
+            "kwargs": {}
+          },
+          {
+            "type": "set",
+            "name": "width",
+            "value": {
+              "expr": "widths[prev][i] + (widths[state][i] - widths[prev][i]) * u"
+            }
+          },
+          {
+            "type": "bar",
+            "target": "im",
+            "args": [
+              {
+                "expr": "(460, y - 28, 460 + width, y + 28)"
+              },
+              {
+                "expr": "YELLOW if i in selected else GRAY"
+              },
+              8
+            ],
+            "kwargs": {}
+          }
+        ]
+      }
+    ]
+  },
+  "segments": [
+    {
+      "id": "00a",
+      "text": "vo/text/00a.txt",
+      "timing": "vo/timing/00a.json",
+      "wav": "vo/wav/00a.wav",
+      "beats": [
+        {
+          "key": "上海",
+          "word": "开头",
+          "text": "上海",
+          "mode": "F",
+          "clip": "39515873",
+          "type": "F"
+        },
+        {
+          "key": "深圳",
+          "word": "深圳",
+          "text": "深圳",
+          "mode": "F",
+          "clip": "35987650",
+          "type": "F"
+        },
+        {
+          "key": "东京",
+          "word": "东京",
+          "text": "东京",
+          "mode": "F",
+          "clip": "35488258",
+          "type": "F"
+        },
+        {
+          "key": "硅谷",
+          "word": "硅谷",
+          "text": "硅谷",
+          "mode": "F",
+          "clip": "33249268",
+          "type": "F"
+        }
+      ],
+      "elements": [
+        {
+          "type": "set",
+          "name": "city",
+          "value": {
+            "expr": "stage(sid, f, CITIES)"
+          }
+        },
+        {
+          "type": "if",
+          "condition": "city",
+          "then": [
+            {
+              "type": "kinetic",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "city"
+                },
+                470,
+                180
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age(city)"
+                }
+              }
+            },
+            {
+              "type": "set",
+              "name": "u",
+              "value": {
+                "expr": "ease(age(city) / 6)"
+              }
+            },
+            {
+              "type": "set",
+              "name": "width",
+              "value": {
+                "expr": "350 * u"
+              }
+            },
+            {
+              "type": "rounded",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "(960 - width / 2, 590, 960 + width / 2, 611)"
+                },
+                {
+                  "expr": "COLORS[CITIES.index(city)]"
+                },
+                3
+              ],
+              "kwargs": {}
+            }
+          ],
+          "else": []
+        }
+      ]
+    },
+    {
+      "id": "00b",
+      "text": "vo/text/00b.txt",
+      "timing": "vo/timing/00b.json",
+      "wav": "vo/wav/00b.wav",
+      "beats": [
+        {
+          "key": "cards",
+          "word": "开头",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "choice",
+          "word": "选哪一座",
+          "text": "选哪个？",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "repeat",
+          "names": "(i, (city, clip))",
+          "items": {
+            "expr": "enumerate(zip(CITIES, T['stills'][:4]))"
+          },
+          "elements": [
+            {
+              "type": "card",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "clip"
+                },
+                {
+                  "expr": "city"
+                },
+                {
+                  "expr": "320 + i % 2 * 660"
+                },
+                {
+                  "expr": "120 + i // 2 * 380"
+                },
+                620,
+                350,
+                {
+                  "expr": "age('cards') - i * 4"
+                }
+              ],
+              "kwargs": {}
+            }
+          ]
+        },
+        {
+          "type": "if",
+          "condition": "on('choice')",
+          "then": [
+            {
+              "type": "sticker-r",
+              "target": "im",
+              "args": [
+                "选哪个？",
+                960,
+                485,
+                94
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('choice')"
+                },
+                "angle": 8
+              }
+            }
+          ],
+          "else": []
+        }
+      ]
+    },
+    {
+      "id": "00c",
+      "text": "vo/text/00c.txt",
+      "timing": "vo/timing/00c.json",
+      "wav": "vo/wav/00c.wav",
+      "beats": [
+        {
+          "key": "live",
+          "word": "开头",
+          "mode": "F",
+          "clip": "6326929",
+          "type": "F"
+        },
+        {
+          "key": "salary",
+          "word": "看工资",
+          "text": "工资",
+          "type": "F"
+        },
+        {
+          "key": "compare",
+          "word": "可工资最高",
+          "text": "工资最高｜过得最好",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "unequal",
+          "word": "未必",
+          "text": "≠",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "if",
+          "condition": "not on('compare')",
+          "then": [
+            {
+              "type": "if",
+              "condition": "on('salary')",
+              "then": [
+                {
+                  "type": "chip-y",
+                  "target": "im",
+                  "args": [
+                    "工资",
+                    960,
+                    350,
+                    114
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('salary')"
+                    }
+                  }
+                }
+              ],
+              "else": []
+            }
+          ],
+          "else": [
+            {
+              "type": "chip-y",
+              "target": "im",
+              "args": [
+                "工资最高",
+                510,
+                485,
+                96
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('compare')"
+                }
+              }
+            },
+            {
+              "type": "chip-k",
+              "target": "im",
+              "args": [
+                "过得最好",
+                1410,
+                485,
+                96
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('compare')"
+                }
+              }
+            },
+            {
+              "type": "if",
+              "condition": "on('unequal')",
+              "then": [
+                {
+                  "type": "text",
+                  "target": "im",
+                  "args": [
+                    "≠",
+                    960,
+                    485,
+                    210,
+                    {
+                      "expr": "RED"
+                    }
+                  ],
+                  "kwargs": {}
+                }
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "00d",
+      "text": "vo/text/00d.txt",
+      "timing": "vo/timing/00d.json",
+      "wav": "vo/wav/00d.wav",
+      "beats": [
+        {
+          "key": "title",
+          "word": "开头",
+          "text": "选城市",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "three",
+          "word": "算三本账",
+          "text": "算三本账",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "text",
+          "target": "im",
+          "args": [
+            "选城市",
+            960,
+            {
+              "expr": "365 if on('three') else 485"
+            },
+            400
+          ],
+          "kwargs": {}
+        },
+        {
+          "type": "if",
+          "condition": "on('three')",
+          "then": [
+            {
+              "type": "set",
+              "name": "u",
+              "value": {
+                "expr": "ease(age('three') / 10)"
+              }
+            },
+            {
+              "type": "set",
+              "name": "w",
+              "value": {
+                "expr": "measure('算三本账', 220)"
+              }
+            },
+            {
+              "type": "rounded",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "(960 - w / 2 - 20, 620, 960 - w / 2 - 20 + (w + 40) * u, 868)"
+                },
+                {
+                  "expr": "YELLOW"
+                },
+                3
+              ],
+              "kwargs": {}
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "算三本账",
+                960,
+                736,
+                220
+              ],
+              "kwargs": {}
+            }
+          ],
+          "else": []
+        }
+      ]
+    },
+    {
+      "id": "01",
+      "text": "vo/text/01.txt",
+      "timing": "vo/timing/01.json",
+      "wav": "vo/wav/01.wav",
+      "beats": [
+        {
+          "key": "money",
+          "word": "第一本",
+          "text": "钱｜一年留下多少",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "chance",
+          "word": "第二本",
+          "text": "机会｜下一份工作在哪",
+          "type": "B"
+        },
+        {
+          "key": "time",
+          "word": "第三本",
+          "text": "时间｜几小时属于自己",
+          "type": "B"
+        },
+        {
+          "key": "gate",
+          "word": "一道门",
+          "text": "一道门",
+          "mode": "F",
+          "clip": "7010153",
+          "type": "F"
+        },
+        {
+          "key": "stay",
+          "word": "让不让你留下来",
+          "text": "留得下吗？",
+          "type": "F"
+        }
+      ],
+      "elements": [
+        {
+          "type": "if",
+          "condition": "mode['mode'] == 'B'",
+          "then": [
+            {
+              "type": "set",
+              "name": "items",
+              "value": {
+                "expr": "[('money', 6326929, '钱', '一年留下多少'), ('chance', 6804109, '机会', '下一份工作在哪'), ('time', 29610852, '时间', '几小时属于自己')]"
+              }
+            },
+            {
+              "type": "set",
+              "name": "visible",
+              "value": {
+                "expr": "[item for item in items if on(item[0])]"
+              }
+            },
+            {
+              "type": "set",
+              "name": "w",
+              "value": {
+                "expr": "{1: 1120, 2: 700, 3: 500}.get(len(visible), 500)"
+              }
+            },
+            {
+              "type": "set",
+              "name": "gap",
+              "value": 50
+            },
+            {
+              "type": "set",
+              "name": "left",
+              "value": {
+                "expr": "960 - (len(visible) * w + (len(visible) - 1) * gap) / 2"
+              }
+            },
+            {
+              "type": "repeat",
+              "names": "(i, (key, clip, label, note))",
+              "items": {
+                "expr": "enumerate(visible)"
+              },
+              "elements": [
+                {
+                  "type": "set",
+                  "name": "x",
+                  "value": {
+                    "expr": "left + i * (w + gap)"
+                  }
+                },
+                {
+                  "type": "card",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "clip"
+                    },
+                    "",
+                    {
+                      "expr": "x"
+                    },
+                    270,
+                    {
+                      "expr": "w"
+                    },
+                    280,
+                    {
+                      "expr": "age(key)"
+                    }
+                  ],
+                  "kwargs": {}
+                },
+                {
+                  "type": "chip-y",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "label"
+                    },
+                    {
+                      "expr": "x + w / 2"
+                    },
+                    615,
+                    56
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age(key)"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "note"
+                    },
+                    {
+                      "expr": "x + w / 2"
+                    },
+                    713,
+                    36
+                  ],
+                  "kwargs": {
+                    "weight": "Medium"
+                  }
+                }
+              ]
+            }
+          ],
+          "else": [
+            {
+              "type": "kinetic",
+              "target": "im",
+              "args": [
+                "一道门",
+                460,
+                160
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('gate')"
+                }
+              }
+            },
+            {
+              "type": "if",
+              "condition": "on('stay')",
+              "then": [
+                {
+                  "type": "sticker-r",
+                  "target": "im",
+                  "args": [
+                    "留得下吗？",
+                    1030,
+                    690,
+                    90
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('stay')"
+                    },
+                    "angle": 8
+                  }
+                }
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02a",
+      "seconds": 2.2,
+      "beats": [
+        {
+          "key": "chapter",
+          "word": "开头",
+          "text": "第一本账｜钱",
+          "mode": "B",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "set",
+          "name": "(number, title)",
+          "value": {
+            "expr": "{'02a': ('第一本账', '钱'), '03a': ('第二本账', '机会'), '04a': ('第三本账', '时间'), '05a': ('最后', '一道门')}[sid]"
+          }
+        },
+        {
+          "type": "chip-k",
+          "target": "im",
+          "args": [
+            {
+              "expr": "number"
+            },
+            960,
+            255,
+            66
+          ],
+          "kwargs": {
+            "age": {
+              "expr": "age('chapter')"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "target": "im",
+          "args": [
+            {
+              "expr": "title"
+            },
+            960,
+            570,
+            {
+              "expr": "310 if len(title) < 3 else 240"
+            }
+          ],
+          "kwargs": {}
+        }
+      ]
+    },
+    {
+      "id": "02b",
+      "text": "vo/text/02b.txt",
+      "timing": "vo/timing/02b.json",
+      "wav": "vo/wav/02b.wav",
+      "beats": [
+        {
+          "key": "programmer",
+          "word": "开头",
+          "text": "程序员",
+          "mode": "F",
+          "clip": "8266171",
+          "type": "F"
+        },
+        {
+          "key": "valley",
+          "word": "硅谷程序员",
+          "text": "硅谷",
+          "mode": "F",
+          "clip": "29545807",
+          "type": "F"
+        },
+        {
+          "key": "salary",
+          "word": "一百五十七万",
+          "text": "157 万 / 年",
+          "type": "F"
+        },
+        {
+          "key": "bars",
+          "word": "是上海",
+          "text": "硅谷｜上海｜深圳｜东京｜157｜67｜51｜36｜程序员年薪中位数｜万元人民币",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "twice",
+          "word": "两倍多",
+          "text": "×2.4",
+          "type": "B"
+        },
+        {
+          "key": "four",
+          "word": "四倍多",
+          "text": "×4.3",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "if",
+          "condition": "not on('bars')",
+          "then": [
+            {
+              "type": "tag",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "'硅谷' if on('valley') else '程序员'"
+                },
+                {
+                  "expr": "age('valley') if on('valley') else age('programmer')"
+                }
+              ],
+              "kwargs": {}
+            },
+            {
+              "type": "if",
+              "condition": "on('salary')",
+              "then": [
+                {
+                  "type": "set",
+                  "name": "n",
+                  "value": {
+                    "expr": "str(round(157 * ease(age('salary') / 12.5)))"
+                  }
+                },
+                {
+                  "type": "kinetic",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "n + ' 万 / 年'"
+                    },
+                    490,
+                    150,
+                    {
+                      "expr": "n"
+                    },
+                    {
+                      "expr": "age('salary')"
+                    }
+                  ],
+                  "kwargs": {}
+                }
+              ],
+              "else": []
+            }
+          ],
+          "else": [
+            {
+              "type": "set",
+              "name": "a",
+              "value": {
+                "expr": "age('bars')"
+              }
+            },
+            {
+              "type": "set",
+              "name": "u",
+              "value": {
+                "expr": "ease(a / 12.5)"
+              }
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "程序员年薪中位数",
+                960,
+                142,
+                56
+              ],
+              "kwargs": {}
+            },
+            {
+              "type": "line",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "(250, 800, 1670, 800)"
+                }
+              ],
+              "kwargs": {
+                "fill": {
+                  "expr": "INK"
+                },
+                "width": 3
+              }
+            },
+            {
+              "type": "repeat",
+              "names": "(i, (city, n, col))",
+              "items": {
+                "expr": "enumerate(zip(['硅谷', '上海', '深圳', '东京'], [157, 67, 51, 36], [YELLOW, RED, GREEN, BLUE]))"
+              },
+              "elements": [
+                {
+                  "type": "set",
+                  "name": "x",
+                  "value": {
+                    "expr": "365 + i * 400"
+                  }
+                },
+                {
+                  "type": "set",
+                  "name": "height",
+                  "value": {
+                    "expr": "n / 157 * 520 * u"
+                  }
+                },
+                {
+                  "type": "bar",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "(x - 110, 800 - height, x + 110, 800)"
+                    },
+                    {
+                      "expr": "col"
+                    },
+                    8
+                  ],
+                  "kwargs": {}
+                },
+                {
+                  "type": "count",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "n"
+                    },
+                    {
+                      "expr": "x"
+                    },
+                    {
+                      "expr": "800 - height - 45"
+                    },
+                    {
+                      "expr": "a"
+                    },
+                    56
+                  ],
+                  "kwargs": {}
+                },
+                {
+                  "type": "text",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "city"
+                    },
+                    {
+                      "expr": "x"
+                    },
+                    842,
+                    44
+                  ],
+                  "kwargs": {}
+                }
+              ]
+            },
+            {
+              "type": "if",
+              "condition": "on('twice')",
+              "then": [
+                {
+                  "type": "chip-k",
+                  "target": "im",
+                  "args": [
+                    "×2.4",
+                    765,
+                    455,
+                    56
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('twice')"
+                    }
+                  }
+                }
+              ],
+              "else": []
+            },
+            {
+              "type": "if",
+              "condition": "on('four')",
+              "then": [
+                {
+                  "type": "chip-k",
+                  "target": "im",
+                  "args": [
+                    "×4.3",
+                    1565,
+                    570,
+                    56
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('four')"
+                    }
+                  }
+                }
+              ],
+              "else": []
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "万元人民币",
+                1680,
+                205,
+                36
+              ],
+              "kwargs": {
+                "anchor": "rm",
+                "weight": "Medium"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02c",
+      "text": "vo/text/02c.txt",
+      "timing": "vo/timing/02c.json",
+      "wav": "vo/wav/02c.wav",
+      "beats": [
+        {
+          "key": "salary",
+          "word": "开头",
+          "text": "工资｜157｜67｜51｜36",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "tax",
+          "word": "税和社保",
+          "text": "税社保｜55｜16｜11｜10",
+          "type": "B"
+        },
+        {
+          "key": "rent",
+          "word": "房租",
+          "text": "房租｜25｜8｜6｜10",
+          "type": "B"
+        },
+        {
+          "key": "keep",
+          "word": "硅谷还剩",
+          "text": "留下｜77｜42｜34｜17",
+          "type": "B"
+        },
+        {
+          "key": "gap",
+          "word": "差距从",
+          "text": "2.4 倍 → 1.8 倍",
+          "type": "B"
+        },
+        {
+          "key": "food",
+          "word": "还没算吃饭",
+          "text": "还没算吃饭",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "set",
+          "name": "cities",
+          "value": {
+            "expr": "['硅谷', '上海', '深圳', '东京']"
+          }
+        },
+        {
+          "type": "set",
+          "name": "clips",
+          "value": {
+            "expr": "[29545807, 33751774, 35720033, 31979796]"
+          }
+        },
+        {
+          "type": "set",
+          "name": "has_footer",
+          "value": {
+            "expr": "on('gap') or on('food')"
+          }
+        },
+        {
+          "type": "set",
+          "name": "shift",
+          "value": {
+            "expr": "0 if has_footer else 45"
+          }
+        },
+        {
+          "type": "repeat",
+          "names": "(i, (city, clip))",
+          "items": {
+            "expr": "enumerate(zip(cities, clips))"
+          },
+          "elements": [
+            {
+              "type": "card",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "clip"
+                },
+                {
+                  "expr": "city"
+                },
+                {
+                  "expr": "370 + i * 350"
+                },
+                {
+                  "expr": "105 + shift"
+                },
+                300,
+                170,
+                {
+                  "expr": "age('salary') - i * 2"
+                }
+              ],
+              "kwargs": {}
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "name": "rows",
+          "value": {
+            "expr": "[('salary', '工资', [157, 67, 51, 36], YELLOW), ('tax', '税社保', [55, 16, 11, 10], GRAY), ('rent', '房租', [25, 8, 6, 10], RED), ('keep', '留下', [77, 42, 34, 17], GREEN)]"
+          }
+        },
+        {
+          "type": "repeat",
+          "names": "(j, (key, label, nums, col))",
+          "items": {
+            "expr": "enumerate(rows)"
+          },
+          "elements": [
+            {
+              "type": "if",
+              "condition": "not on(key)",
+              "then": [
+                {
+                  "type": "continue"
+                }
+              ],
+              "else": []
+            },
+            {
+              "type": "set",
+              "name": "y",
+              "value": {
+                "expr": "350 + j * 108 + shift"
+              }
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "label"
+                },
+                235,
+                {
+                  "expr": "y"
+                },
+                46
+              ],
+              "kwargs": {}
+            },
+            {
+              "type": "set",
+              "name": "u",
+              "value": {
+                "expr": "ease(age(key) / 12.5)"
+              }
+            },
+            {
+              "type": "repeat",
+              "names": "(i, n)",
+              "items": {
+                "expr": "enumerate(nums)"
+              },
+              "elements": [
+                {
+                  "type": "set",
+                  "name": "x",
+                  "value": {
+                    "expr": "370 + i * 350"
+                  }
+                },
+                {
+                  "type": "set",
+                  "name": "width",
+                  "value": {
+                    "expr": "300 * n / 157 * u"
+                  }
+                },
+                {
+                  "type": "bar",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "(x, y - 22, x + max(1, width), y + 22)"
+                    },
+                    {
+                      "expr": "col"
+                    },
+                    5
+                  ],
+                  "kwargs": {}
+                },
+                {
+                  "type": "set",
+                  "name": "value",
+                  "value": {
+                    "expr": "str(round(n * u))"
+                  }
+                },
+                {
+                  "type": "text",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "value"
+                    },
+                    {
+                      "expr": "x + 14 if width > 85 else x + width + 10"
+                    },
+                    {
+                      "expr": "y"
+                    },
+                    36,
+                    {
+                      "expr": "INK if col in [GRAY, YELLOW] or width <= 85 else 'white'"
+                    }
+                  ],
+                  "kwargs": {
+                    "anchor": "lm"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "target": "im",
+          "args": [
+            {
+              "expr": "(165, 740 + shift, 1755, 740 + shift)"
+            }
+          ],
+          "kwargs": {
+            "fill": {
+              "expr": "INK"
+            },
+            "width": 3
+          }
+        },
+        {
+          "type": "if",
+          "condition": "on('gap')",
+          "then": [
+            {
+              "type": "sticker-r",
+              "target": "im",
+              "args": [
+                "2.4 倍 → 1.8 倍",
+                710,
+                808,
+                56
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('gap')"
+                },
+                "angle": 0
+              }
+            }
+          ],
+          "else": []
+        },
+        {
+          "type": "if",
+          "condition": "on('food')",
+          "then": [
+            {
+              "type": "chip-k",
+              "target": "im",
+              "args": [
+                "还没算吃饭",
+                1430,
+                808,
+                48
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('food')"
+                }
+              }
+            }
+          ],
+          "else": []
+        }
+      ]
+    },
+    {
+      "id": "02d",
+      "text": "vo/text/02d.txt",
+      "timing": "vo/timing/02d.json",
+      "wav": "vo/wav/02d.wav",
+      "beats": [
+        {
+          "key": "tokyo",
+          "word": "开头",
+          "text": "东京",
+          "mode": "F",
+          "clip": "31979796",
+          "type": "F"
+        },
+        {
+          "key": "rent",
+          "word": "房租要吃掉",
+          "text": "房租吃掉到手的｜4 成",
+          "type": "F"
+        }
+      ],
+      "elements": [
+        {
+          "type": "tag",
+          "target": "im",
+          "args": [
+            "东京",
+            {
+              "expr": "age('tokyo')"
+            }
+          ],
+          "kwargs": {}
+        },
+        {
+          "type": "if",
+          "condition": "on('rent')",
+          "then": [
+            {
+              "type": "kinetic",
+              "target": "im",
+              "args": [
+                "房租吃掉到手的",
+                385,
+                98
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('rent')"
+                }
+              }
+            },
+            {
+              "type": "set",
+              "name": "label",
+              "value": {
+                "expr": "str(round(4 * ease(age('rent') / 12.5))) + ' 成'"
+              }
+            },
+            {
+              "type": "kinetic",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "label"
+                },
+                620,
+                210,
+                {
+                  "expr": "label"
+                },
+                {
+                  "expr": "age('rent')"
+                }
+              ],
+              "kwargs": {}
+            }
+          ],
+          "else": []
+        }
+      ]
+    },
+    {
+      "id": "02e",
+      "text": "vo/text/02e.txt",
+      "timing": "vo/timing/02e.json",
+      "wav": "vo/wav/02e.wav",
+      "beats": [
+        {
+          "key": "buy",
+          "word": "开头",
+          "text": "买房？",
+          "mode": "F",
+          "clip": "7578842",
+          "type": "F"
+        },
+        {
+          "key": "formula",
+          "word": "按房价收入比",
+          "text": "房价｜÷｜年收入｜=｜不吃不喝几年｜房价收入比｜众包数据｜2026",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "上海",
+          "word": "上海",
+          "text": "34 年",
+          "type": "B"
+        },
+        {
+          "key": "深圳",
+          "word": "深圳",
+          "text": "29 年",
+          "type": "B"
+        },
+        {
+          "key": "东京",
+          "word": "东京",
+          "text": "15 年",
+          "type": "B"
+        },
+        {
+          "key": "硅谷",
+          "word": "硅谷",
+          "text": "8 年",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "if",
+          "condition": "not on('formula')",
+          "then": [
+            {
+              "type": "chip-y",
+              "target": "im",
+              "args": [
+                "买房？",
+                960,
+                450,
+                125
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('buy')"
+                }
+              }
+            }
+          ],
+          "else": [
+            {
+              "type": "repeat",
+              "names": "(label, x, kind)",
+              "items": {
+                "expr": "[('房价', 380, 'k'), ('年收入', 790, 'k'), ('不吃不喝几年', 1390, 'y')]"
+              },
+              "elements": [
+                {
+                  "type": "chip",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "label"
+                    },
+                    {
+                      "expr": "x"
+                    },
+                    205,
+                    56
+                  ],
+                  "kwargs": {
+                    "kind": {
+                      "expr": "kind"
+                    },
+                    "age": {
+                      "expr": "age('formula')"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "÷",
+                565,
+                205,
+                80
+              ],
+              "kwargs": {}
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "=",
+                1025,
+                205,
+                80
+              ],
+              "kwargs": {}
+            },
+            {
+              "type": "repeat",
+              "names": "(i, (city, clip, n))",
+              "items": {
+                "expr": "enumerate(zip(CITIES, [39410948, 35987653, 20162399, 10184687], [34, 29, 15, 8]))"
+              },
+              "elements": [
+                {
+                  "type": "set",
+                  "name": "x",
+                  "value": {
+                    "expr": "155 + 410 * i"
+                  }
+                },
+                {
+                  "type": "card",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "clip"
+                    },
+                    {
+                      "expr": "city"
+                    },
+                    {
+                      "expr": "x"
+                    },
+                    345,
+                    380,
+                    214,
+                    {
+                      "expr": "age('formula') - i * 2"
+                    }
+                  ],
+                  "kwargs": {}
+                },
+                {
+                  "type": "if",
+                  "condition": "on(city)",
+                  "then": [
+                    {
+                      "type": "layer",
+                      "name": "tile",
+                      "size": {
+                        "expr": "(420, 175)"
+                      },
+                      "color": null
+                    },
+                    {
+                      "type": "count",
+                      "target": "tile",
+                      "args": [
+                        {
+                          "expr": "n"
+                        },
+                        210,
+                        87,
+                        {
+                          "expr": "age(city)"
+                        },
+                        96
+                      ],
+                      "kwargs": {
+                        "unit": " 年"
+                      }
+                    },
+                    {
+                      "type": "place",
+                      "target": "im",
+                      "args": [
+                        {
+                          "expr": "tile"
+                        },
+                        {
+                          "expr": "x + 190"
+                        },
+                        695,
+                        {
+                          "expr": "age(city)"
+                        },
+                        "flip"
+                      ],
+                      "kwargs": {}
+                    }
+                  ],
+                  "else": []
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "房价收入比｜众包数据｜2026",
+                960,
+                825,
+                36
+              ],
+              "kwargs": {
+                "weight": "Medium"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03a",
+      "seconds": 2.2,
+      "beats": [
+        {
+          "key": "chapter",
+          "word": "开头",
+          "text": "第二本账｜机会",
+          "mode": "B",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "set",
+          "name": "(number, title)",
+          "value": {
+            "expr": "{'02a': ('第一本账', '钱'), '03a': ('第二本账', '机会'), '04a': ('第三本账', '时间'), '05a': ('最后', '一道门')}[sid]"
+          }
+        },
+        {
+          "type": "chip-k",
+          "target": "im",
+          "args": [
+            {
+              "expr": "number"
+            },
+            960,
+            255,
+            66
+          ],
+          "kwargs": {
+            "age": {
+              "expr": "age('chapter')"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "target": "im",
+          "args": [
+            {
+              "expr": "title"
+            },
+            960,
+            570,
+            {
+              "expr": "310 if len(title) < 3 else 240"
+            }
+          ],
+          "kwargs": {}
+        }
+      ]
+    },
+    {
+      "id": "03b",
+      "text": "vo/text/03b.txt",
+      "timing": "vo/timing/03b.json",
+      "wav": "vo/wav/03b.wav",
+      "beats": [
+        {
+          "key": "city",
+          "word": "开头",
+          "mode": "F",
+          "clip": "33751774",
+          "type": "F"
+        },
+        {
+          "key": "size",
+          "word": "城市大不大",
+          "text": "城市多大",
+          "type": "F"
+        },
+        {
+          "key": "strike",
+          "word": "不重要",
+          "type": "F"
+        },
+        {
+          "key": "density",
+          "word": "你这一行",
+          "text": "你这一行 有多密｜芯片·生物医药·汽车·金融｜电子·新能源车·软件｜金融·电子·文娱｜芯片·人工智能·软件",
+          "mode": "B",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "if",
+          "condition": "not on('density')",
+          "then": [
+            {
+              "type": "if",
+              "condition": "on('size')",
+              "then": [
+                {
+                  "type": "kinetic",
+                  "target": "im",
+                  "args": [
+                    "城市多大",
+                    480,
+                    160
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('size')"
+                    }
+                  }
+                }
+              ],
+              "else": []
+            },
+            {
+              "type": "if",
+              "condition": "on('strike')",
+              "then": [
+                {
+                  "type": "set",
+                  "name": "u",
+                  "value": {
+                    "expr": "ease(age('strike') / 5)"
+                  }
+                },
+                {
+                  "type": "line",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "(620, 490, 620 + 680 * u, 455)"
+                    }
+                  ],
+                  "kwargs": {
+                    "fill": {
+                      "expr": "RED"
+                    },
+                    "width": 17
+                  }
+                }
+              ],
+              "else": []
+            }
+          ],
+          "else": [
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "你这一行",
+                920,
+                153,
+                72
+              ],
+              "kwargs": {
+                "anchor": "rm"
+              }
+            },
+            {
+              "type": "chip-y",
+              "target": "im",
+              "args": [
+                "有多密",
+                1110,
+                153,
+                72
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('density')"
+                }
+              }
+            },
+            {
+              "type": "set",
+              "name": "industries",
+              "value": {
+                "expr": "['芯片·生物医药·汽车·金融', '电子·新能源车·软件', '金融·电子·文娱', '芯片·人工智能·软件']"
+              }
+            },
+            {
+              "type": "repeat",
+              "names": "(i, (city, clip, note))",
+              "items": {
+                "expr": "enumerate(zip(CITIES, [39515873, 35987650, 35488258, 33249268], industries))"
+              },
+              "elements": [
+                {
+                  "type": "set",
+                  "name": "x",
+                  "value": {
+                    "expr": "210 + i % 2 * 790"
+                  }
+                },
+                {
+                  "type": "set",
+                  "name": "y",
+                  "value": {
+                    "expr": "245 + i // 2 * 325"
+                  }
+                },
+                {
+                  "type": "card",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "clip"
+                    },
+                    {
+                      "expr": "city"
+                    },
+                    {
+                      "expr": "x"
+                    },
+                    {
+                      "expr": "y"
+                    },
+                    710,
+                    210,
+                    {
+                      "expr": "age('density') - i * 2"
+                    }
+                  ],
+                  "kwargs": {}
+                },
+                {
+                  "type": "chip-k",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "note"
+                    },
+                    {
+                      "expr": "x + 355"
+                    },
+                    {
+                      "expr": "y + 255"
+                    },
+                    36
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('density') - i * 2"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03c",
+      "text": "vo/text/03c.txt",
+      "timing": "vo/timing/03c.json",
+      "wav": "vo/wav/03c.wav",
+      "beats": [
+        {
+          "key": "unicorn",
+          "word": "开头",
+          "text": "独角兽企业｜胡润全球独角兽榜｜2026",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "上海",
+          "word": "上海",
+          "text": "上海｜74",
+          "type": "B"
+        },
+        {
+          "key": "深圳",
+          "word": "深圳",
+          "text": "深圳｜44",
+          "type": "B"
+        },
+        {
+          "key": "jump",
+          "word": "行业够密",
+          "text": "跳槽",
+          "mode": "F",
+          "clip": "6804109",
+          "type": "F"
+        },
+        {
+          "key": "next",
+          "word": "下一家",
+          "text": "有下一家可去",
+          "type": "F"
+        }
+      ],
+      "elements": [
+        {
+          "type": "if",
+          "condition": "not on('jump')",
+          "then": [
+            {
+              "type": "chip-y",
+              "target": "im",
+              "args": [
+                "独角兽企业",
+                960,
+                180,
+                84
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('unicorn')"
+                }
+              }
+            },
+            {
+              "type": "repeat",
+              "names": "(i, (city, n, col))",
+              "items": {
+                "expr": "enumerate([('上海', 74, RED), ('深圳', 44, GREEN)])"
+              },
+              "elements": [
+                {
+                  "type": "set",
+                  "name": "x",
+                  "value": {
+                    "expr": "260 + i * 840"
+                  }
+                },
+                {
+                  "type": "chip",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "city"
+                    },
+                    {
+                      "expr": "400 + i * 1120"
+                    },
+                    325,
+                    56
+                  ],
+                  "kwargs": {
+                    "kind": "tag",
+                    "age": {
+                      "expr": "age(city) if on(city) else None"
+                    }
+                  }
+                },
+                {
+                  "type": "if",
+                  "condition": "on(city)",
+                  "then": [
+                    {
+                      "type": "set",
+                      "name": "a",
+                      "value": {
+                        "expr": "age(city)"
+                      }
+                    },
+                    {
+                      "type": "set",
+                      "name": "num",
+                      "value": {
+                        "expr": "round(n * ease(a / 18))"
+                      }
+                    },
+                    {
+                      "type": "repeat",
+                      "names": "j",
+                      "items": {
+                        "expr": "range(n)"
+                      },
+                      "elements": [
+                        {
+                          "type": "dots",
+                          "elements": [
+                            {
+                              "type": "set",
+                              "name": "cx",
+                              "value": {
+                                "expr": "x + j % 10 * 40"
+                              }
+                            },
+                            {
+                              "type": "set",
+                              "name": "cy",
+                              "value": {
+                                "expr": "435 + j // 10 * 42"
+                              }
+                            },
+                            {
+                              "type": "ellipse",
+                              "target": "im",
+                              "args": [
+                                {
+                                  "expr": "(cx - 11, cy - 11, cx + 11, cy + 11)"
+                                }
+                              ],
+                              "kwargs": {
+                                "fill": {
+                                  "expr": "col if j < num else '#E1DDD3'"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "count",
+                      "target": "im",
+                      "args": [
+                        {
+                          "expr": "n"
+                        },
+                        {
+                          "expr": "x + 530"
+                        },
+                        560,
+                        {
+                          "expr": "a"
+                        },
+                        140,
+                        {
+                          "expr": "col"
+                        }
+                      ],
+                      "kwargs": {}
+                    }
+                  ],
+                  "else": []
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "胡润全球独角兽榜｜2026",
+                960,
+                825,
+                36
+              ],
+              "kwargs": {
+                "weight": "Medium"
+              }
+            }
+          ],
+          "else": [
+            {
+              "type": "kinetic",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "'有下一家可去' if on('next') else '跳槽'"
+                },
+                480,
+                140,
+                {
+                  "expr": "'下一家' if on('next') else ''"
+                },
+                {
+                  "expr": "age('next') if on('next') else age('jump')"
+                }
+              ],
+              "kwargs": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03d",
+      "text": "vo/text/03d.txt",
+      "timing": "vo/timing/03d.json",
+      "wav": "vo/wav/03d.wav",
+      "beats": [
+        {
+          "key": "current",
+          "word": "开头",
+          "text": "不是这一份",
+          "mode": "F",
+          "clip": "16407855",
+          "type": "F"
+        },
+        {
+          "key": "next",
+          "word": "而是",
+          "text": "而是下一份",
+          "type": "F"
+        }
+      ],
+      "elements": [
+        {
+          "type": "kinetic",
+          "target": "im",
+          "args": [
+            "不是这一份",
+            355,
+            115
+          ],
+          "kwargs": {
+            "color": "#C9C4B8",
+            "age": {
+              "expr": "age('current')"
+            }
+          }
+        },
+        {
+          "type": "if",
+          "condition": "on('next')",
+          "then": [
+            {
+              "type": "kinetic",
+              "target": "im",
+              "args": [
+                "而是下一份",
+                610,
+                150,
+                "下一份",
+                {
+                  "expr": "age('next')"
+                }
+              ],
+              "kwargs": {}
+            }
+          ],
+          "else": []
+        }
+      ]
+    },
+    {
+      "id": "04a",
+      "seconds": 2.2,
+      "beats": [
+        {
+          "key": "chapter",
+          "word": "开头",
+          "text": "第三本账｜时间",
+          "mode": "B",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "set",
+          "name": "(number, title)",
+          "value": {
+            "expr": "{'02a': ('第一本账', '钱'), '03a': ('第二本账', '机会'), '04a': ('第三本账', '时间'), '05a': ('最后', '一道门')}[sid]"
+          }
+        },
+        {
+          "type": "chip-k",
+          "target": "im",
+          "args": [
+            {
+              "expr": "number"
+            },
+            960,
+            255,
+            66
+          ],
+          "kwargs": {
+            "age": {
+              "expr": "age('chapter')"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "target": "im",
+          "args": [
+            {
+              "expr": "title"
+            },
+            960,
+            570,
+            {
+              "expr": "310 if len(title) < 3 else 240"
+            }
+          ],
+          "kwargs": {}
+        }
+      ]
+    },
+    {
+      "id": "04b",
+      "text": "vo/text/04b.txt",
+      "timing": "vo/timing/04b.json",
+      "wav": "vo/wav/04b.wav",
+      "beats": [
+        {
+          "key": "commute",
+          "word": "开头",
+          "mode": "F",
+          "clip": "29610852",
+          "type": "F"
+        },
+        {
+          "key": "single",
+          "word": "单程通勤",
+          "text": "单程通勤",
+          "type": "F"
+        },
+        {
+          "key": "硅谷",
+          "word": "硅谷",
+          "text": "硅谷｜26 分钟",
+          "mode": "F",
+          "clip": "19347491",
+          "type": "F"
+        },
+        {
+          "key": "深圳",
+          "word": "深圳",
+          "text": "深圳｜33 分钟",
+          "mode": "F",
+          "clip": "35969847",
+          "type": "F"
+        },
+        {
+          "key": "上海",
+          "word": "上海",
+          "text": "上海｜39 分钟",
+          "mode": "F",
+          "clip": "18552655",
+          "type": "F"
+        },
+        {
+          "key": "东京",
+          "word": "东京",
+          "text": "东京｜≈47 分钟",
+          "mode": "F",
+          "clip": "34777715",
+          "type": "F"
+        },
+        {
+          "key": "school",
+          "word": "上学",
+          "text": "含上学",
+          "type": "F"
+        }
+      ],
+      "elements": [
+        {
+          "type": "set",
+          "name": "city",
+          "value": {
+            "expr": "stage(sid, f, ['硅谷', '深圳', '上海', '东京'])"
+          }
+        },
+        {
+          "type": "if",
+          "condition": "city",
+          "then": [
+            {
+              "type": "tag",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "city"
+                },
+                {
+                  "expr": "age(city)"
+                }
+              ],
+              "kwargs": {}
+            },
+            {
+              "type": "set",
+              "name": "value",
+              "value": {
+                "expr": "{'硅谷': 26, '深圳': 33, '上海': 39, '东京': 47}[city]"
+              }
+            },
+            {
+              "type": "set",
+              "name": "label",
+              "value": {
+                "expr": "('≈' if city == '东京' else '') + str(round(value * ease(age(city) / 12.5))) + ' 分钟'"
+              }
+            },
+            {
+              "type": "kinetic",
+              "target": "im",
+              "args": [
+                {
+                  "expr": "label"
+                },
+                490,
+                180
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age(city)"
+                }
+              }
+            },
+            {
+              "type": "if",
+              "condition": "on('school')",
+              "then": [
+                {
+                  "type": "chip-k",
+                  "target": "im",
+                  "args": [
+                    "含上学",
+                    1490,
+                    740,
+                    54
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('school')"
+                    }
+                  }
+                }
+              ],
+              "else": []
+            }
+          ],
+          "else": [
+            {
+              "type": "if",
+              "condition": "on('single')",
+              "then": [
+                {
+                  "type": "chip-y",
+                  "target": "im",
+                  "args": [
+                    "单程通勤",
+                    960,
+                    400,
+                    110
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('single')"
+                    }
+                  }
+                }
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "04c",
+      "text": "vo/text/04c.txt",
+      "timing": "vo/timing/04c.json",
+      "wav": "vo/wav/04c.wav",
+      "beats": [
+        {
+          "key": "formula",
+          "word": "开头",
+          "text": "每天多 20 分钟｜×｜一年｜=",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "hours",
+          "word": "一百七十多个小时",
+          "text": "175 小时",
+          "type": "B"
+        },
+        {
+          "key": "month",
+          "word": "一个月",
+          "text": "≈ 一个月的班",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "formula",
+          "elements": [
+            {
+              "type": "set",
+              "name": "shift",
+              "value": {
+                "expr": "-52 if on('month') else 50 if on('hours') else 210"
+              }
+            },
+            {
+              "type": "chip-k",
+              "target": "im",
+              "args": [
+                "每天多 20 分钟",
+                595,
+                {
+                  "expr": "265 + shift"
+                },
+                80
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('formula')"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "×",
+                1115,
+                {
+                  "expr": "265 + shift"
+                },
+                105
+              ],
+              "kwargs": {}
+            },
+            {
+              "type": "chip-k",
+              "target": "im",
+              "args": [
+                "一年",
+                1335,
+                {
+                  "expr": "265 + shift"
+                },
+                80
+              ],
+              "kwargs": {
+                "age": {
+                  "expr": "age('formula')"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "target": "im",
+              "args": [
+                "=",
+                1580,
+                {
+                  "expr": "265 + shift"
+                },
+                105
+              ],
+              "kwargs": {}
+            },
+            {
+              "type": "if",
+              "condition": "on('hours')",
+              "then": [
+                {
+                  "type": "chip-y",
+                  "target": "im",
+                  "args": [
+                    {
+                      "expr": "str(round(175 * ease(age('hours') / 12.5))) + ' 小时'"
+                    },
+                    960,
+                    {
+                      "expr": "525 + shift"
+                    },
+                    160
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('hours')"
+                    }
+                  }
+                }
+              ],
+              "else": []
+            },
+            {
+              "type": "if",
+              "condition": "on('month')",
+              "then": [
+                {
+                  "type": "sticker-r",
+                  "target": "im",
+                  "args": [
+                    "≈ 一个月的班",
+                    960,
+                    {
+                      "expr": "740 + shift"
+                    },
+                    86
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('month')"
+                    },
+                    "angle": 8
+                  }
+                }
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05a",
+      "seconds": 2.2,
+      "beats": [
+        {
+          "key": "chapter",
+          "word": "开头",
+          "text": "最后｜一道门",
+          "mode": "B",
+          "type": "B"
+        }
+      ],
+      "elements": [
+        {
+          "type": "set",
+          "name": "(number, title)",
+          "value": {
+            "expr": "{'02a': ('第一本账', '钱'), '03a': ('第二本账', '机会'), '04a': ('第三本账', '时间'), '05a': ('最后', '一道门')}[sid]"
+          }
+        },
+        {
+          "type": "chip-k",
+          "target": "im",
+          "args": [
+            {
+              "expr": "number"
+            },
+            960,
+            255,
+            66
+          ],
+          "kwargs": {
+            "age": {
+              "expr": "age('chapter')"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "target": "im",
+          "args": [
+            {
+              "expr": "title"
+            },
+            960,
+            570,
+            {
+              "expr": "310 if len(title) < 3 else 240"
+            }
+          ],
+          "kwargs": {}
+        }
+      ]
+    },
+    {
+      "id": "05b",
+      "text": "vo/text/05b.txt",
+      "timing": "vo/timing/05b.json",
+      "wav": "vo/wav/05b.wav",
+      "beats": [
+        {
+          "key": "gate",
+          "word": "开头",
+          "mode": "F",
+          "clip": "29576553",
+          "type": "F"
+        },
+        {
+          "key": "come",
+          "word": "能来",
+          "text": "能来",
+          "type": "F"
+        },
+        {
+          "key": "unequal",
+          "word": "不等于",
+          "text": "≠",
+          "type": "F"
+        },
+        {
+          "key": "stay",
+          "word": "能留下",
+          "text": "能留下",
+          "type": "F"
+        },
+        {
+          "key": "深圳",
+          "word": "深圳的人才落户",
+          "text": "深圳｜本科 · 45 岁以下｜门槛最低",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "上海",
+          "word": "上海",
+          "text": "上海｜居转户 约 7 年",
+          "type": "B"
+        },
+        {
+          "key": "东京",
+          "word": "东京",
+          "text": "东京｜高度人才｜最快 1 年永住",
+          "type": "B"
+        },
+        {
+          "key": "硅谷",
+          "word": "硅谷",
+          "text": "硅谷｜先抽中工作签证｜抽签",
+          "type": "B"
+        },
+        {
+          "key": "meaning",
+          "word": "这道门决定了",
+          "mode": "F",
+          "clip": "6300455",
+          "type": "F"
+        },
+        {
+          "key": "house",
+          "word": "买房",
+          "text": "买房",
+          "type": "F"
+        },
+        {
+          "key": "school",
+          "word": "上学",
+          "text": "孩子上学",
+          "type": "F"
+        },
+        {
+          "key": "old",
+          "word": "安心变老",
+          "text": "安心变老",
+          "type": "F"
+        }
+      ],
+      "elements": [
+        {
+          "type": "if",
+          "condition": "mode['mode'] == 'B'",
+          "then": [
+            {
+              "type": "set",
+              "name": "policies",
+              "value": {
+                "expr": "[('深圳', 35987650, ['本科 · 45 岁以下']), ('上海', 39515873, ['居转户', '约 7 年']), ('东京', 35488258, ['高度人才', '最快 1 年永住']), ('硅谷', 33249268, ['先抽中', '工作签证'])]"
+              }
+            },
+            {
+              "type": "repeat",
+              "names": "(i, (city, clip, lines))",
+              "items": {
+                "expr": "enumerate(policies)"
+              },
+              "elements": [
+                {
+                  "type": "set",
+                  "name": "x",
+                  "value": {
+                    "expr": "180 + i * 400"
+                  }
+                },
+                {
+                  "type": "set",
+                  "name": "w",
+                  "value": 360
+                },
+                {
+                  "type": "set",
+                  "name": "h",
+                  "value": 520
+                },
+                {
+                  "type": "layer",
+                  "name": "tile",
+                  "size": {
+                    "expr": "(w + 60, h + 60)"
+                  },
+                  "color": null
+                },
+                {
+                  "type": "rounded",
+                  "target": "tile",
+                  "args": [
+                    {
+                      "expr": "(30, 30, w + 30, h + 30)"
+                    },
+                    "white",
+                    10
+                  ],
+                  "kwargs": {}
+                },
+                {
+                  "type": "if",
+                  "condition": "on(city)",
+                  "then": [
+                    {
+                      "type": "set",
+                      "name": "pic",
+                      "value": {
+                        "expr": "photo(str(clip), w - 12, 205)"
+                      }
+                    },
+                    {
+                      "type": "alpha_paste",
+                      "target": "tile",
+                      "args": [
+                        {
+                          "expr": "pic"
+                        },
+                        36,
+                        36
+                      ],
+                      "kwargs": {}
+                    },
+                    {
+                      "type": "repeat",
+                      "names": "(j, line)",
+                      "items": {
+                        "expr": "enumerate(lines)"
+                      },
+                      "elements": [
+                        {
+                          "type": "text",
+                          "target": "tile",
+                          "args": [
+                            {
+                              "expr": "line"
+                            },
+                            {
+                              "expr": "w / 2 + 30"
+                            },
+                            {
+                              "expr": "310 + j * 68"
+                            },
+                            40
+                          ],
+                          "kwargs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "condition": "city == '深圳'",
+                      "then": [
+                        {
+                          "type": "chip-g",
+                          "target": "tile",
+                          "args": [
+                            "门槛最低",
+                            {
+                              "expr": "w / 2 + 30"
+                            },
+                            464,
+                            40
+                          ],
+                          "kwargs": {}
+                        }
+                      ],
+                      "else": []
+                    },
+                    {
+                      "type": "if",
+                      "condition": "city == '硅谷'",
+                      "then": [
+                        {
+                          "type": "sticker-r",
+                          "target": "tile",
+                          "args": [
+                            "抽签",
+                            {
+                              "expr": "w / 2 + 30"
+                            },
+                            464,
+                            48
+                          ],
+                          "kwargs": {
+                            "angle": 8
+                          }
+                        }
+                      ],
+                      "else": []
+                    },
+                    {
+                      "type": "chip",
+                      "target": "tile",
+                      "args": [
+                        {
+                          "expr": "city"
+                        },
+                        {
+                          "expr": "w / 2 + 30"
+                        },
+                        100,
+                        49
+                      ],
+                      "kwargs": {
+                        "kind": "tag"
+                      }
+                    },
+                    {
+                      "type": "place",
+                      "target": "im",
+                      "args": [
+                        {
+                          "expr": "shadow(tile)"
+                        },
+                        {
+                          "expr": "x + w / 2"
+                        },
+                        485,
+                        {
+                          "expr": "age(city)"
+                        },
+                        "flip"
+                      ],
+                      "kwargs": {}
+                    }
+                  ],
+                  "else": [
+                    {
+                      "type": "rounded",
+                      "target": "tile",
+                      "args": [
+                        {
+                          "expr": "(55, 55, w + 5, h + 5)"
+                        },
+                        {
+                          "expr": "PAPER"
+                        },
+                        8
+                      ],
+                      "kwargs": {}
+                    },
+                    {
+                      "type": "text",
+                      "target": "tile",
+                      "args": [
+                        {
+                          "expr": "city"
+                        },
+                        {
+                          "expr": "w / 2 + 30"
+                        },
+                        {
+                          "expr": "h / 2 + 30"
+                        },
+                        66,
+                        "#B1ACA0"
+                      ],
+                      "kwargs": {}
+                    },
+                    {
+                      "type": "place",
+                      "target": "im",
+                      "args": [
+                        {
+                          "expr": "shadow(tile)"
+                        },
+                        {
+                          "expr": "x + w / 2"
+                        },
+                        485
+                      ],
+                      "kwargs": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "else": [
+            {
+              "type": "if",
+              "condition": "on('meaning')",
+              "then": [
+                {
+                  "type": "repeat",
+                  "names": "(i, (key, label))",
+                  "items": {
+                    "expr": "enumerate([('house', '买房'), ('school', '孩子上学'), ('old', '安心变老')])"
+                  },
+                  "elements": [
+                    {
+                      "type": "if",
+                      "condition": "on(key)",
+                      "then": [
+                        {
+                          "type": "chip-y",
+                          "target": "im",
+                          "args": [
+                            {
+                              "expr": "label"
+                            },
+                            {
+                              "expr": "960 + (i - 1) * 440"
+                            },
+                            {
+                              "expr": "440 + i * 110"
+                            },
+                            70
+                          ],
+                          "kwargs": {
+                            "age": {
+                              "expr": "age(key)"
+                            }
+                          }
+                        }
+                      ],
+                      "else": []
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "type": "if",
+                  "condition": "on('come')",
+                  "then": [
+                    {
+                      "type": "if",
+                      "condition": "not on('stay')",
+                      "then": [
+                        {
+                          "type": "kinetic",
+                          "target": "im",
+                          "args": [
+                            "能来",
+                            450,
+                            140
+                          ],
+                          "kwargs": {
+                            "age": {
+                              "expr": "age('come')"
+                            }
+                          }
+                        }
+                      ],
+                      "else": [
+                        {
+                          "type": "kinetic",
+                          "target": "im",
+                          "args": [
+                            "能来",
+                            380,
+                            130
+                          ],
+                          "kwargs": {}
+                        }
+                      ]
+                    }
+                  ],
+                  "else": []
+                },
+                {
+                  "type": "if",
+                  "condition": "on('unequal')",
+                  "then": [
+                    {
+                      "type": "text",
+                      "target": "im",
+                      "args": [
+                        "≠",
+                        960,
+                        550,
+                        160,
+                        {
+                          "expr": "RED"
+                        }
+                      ],
+                      "kwargs": {
+                        "stroke": 4
+                      }
+                    }
+                  ],
+                  "else": []
+                },
+                {
+                  "type": "if",
+                  "condition": "on('stay')",
+                  "then": [
+                    {
+                      "type": "kinetic",
+                      "target": "im",
+                      "args": [
+                        "能留下",
+                        735,
+                        130
+                      ],
+                      "kwargs": {
+                        "age": {
+                          "expr": "age('stay')"
+                        }
+                      }
+                    }
+                  ],
+                  "else": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "text": "vo/text/06.txt",
+      "timing": "vo/timing/06.json",
+      "wav": "vo/wav/06.wav",
+      "beats": [
+        {
+          "key": "weights",
+          "word": "开头",
+          "text": "分量会变｜钱｜机会｜时间｜门",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "young",
+          "word": "二十多岁",
+          "text": "20 多岁",
+          "type": "B"
+        },
+        {
+          "key": "try",
+          "word": "多试",
+          "text": "多试 多跳",
+          "mode": "F",
+          "clip": "30339963",
+          "type": "F"
+        },
+        {
+          "key": "leverage",
+          "word": "杠杆",
+          "text": "密度 = 杠杆",
+          "type": "F"
+        },
+        {
+          "key": "thirty",
+          "word": "三十岁上下",
+          "text": "30 岁上下",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "keep",
+          "word": "留下多少",
+          "text": "留下多少 ＞ 赚多少",
+          "mode": "F",
+          "clip": "7578842",
+          "type": "F"
+        },
+        {
+          "key": "kids",
+          "word": "有了孩子",
+          "text": "有了孩子",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "commute",
+          "word": "通勤多长",
+          "text": "通勤｜上学",
+          "mode": "F",
+          "clip": "6182047",
+          "type": "F"
+        }
+      ],
+      "elements": [
+        {
+          "type": "if",
+          "condition": "mode['mode'] == 'B'",
+          "then": [
+            {
+              "type": "include",
+              "layout": "weights"
+            }
+          ],
+          "else": [
+            {
+              "type": "if",
+              "condition": "on('commute')",
+              "then": [
+                {
+                  "type": "chip-y",
+                  "target": "im",
+                  "args": [
+                    "通勤",
+                    650,
+                    460,
+                    115
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('commute')"
+                    }
+                  }
+                },
+                {
+                  "type": "chip-y",
+                  "target": "im",
+                  "args": [
+                    "上学",
+                    1260,
+                    590,
+                    115
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('commute') - 3"
+                    }
+                  }
+                }
+              ],
+              "else": [
+                {
+                  "type": "if",
+                  "condition": "on('keep') and (not on('kids'))",
+                  "then": [
+                    {
+                      "type": "kinetic",
+                      "target": "im",
+                      "args": [
+                        "留下多少 ＞ 赚多少",
+                        490,
+                        126,
+                        "留下多少",
+                        {
+                          "expr": "age('keep')"
+                        }
+                      ],
+                      "kwargs": {}
+                    }
+                  ],
+                  "else": [
+                    {
+                      "type": "kinetic",
+                      "target": "im",
+                      "args": [
+                        {
+                          "expr": "'密度 = 杠杆' if on('leverage') else '多试 多跳'"
+                        },
+                        490,
+                        145,
+                        {
+                          "expr": "'杠杆' if on('leverage') else ''"
+                        },
+                        {
+                          "expr": "age('leverage') if on('leverage') else age('try')"
+                        }
+                      ],
+                      "kwargs": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "text": "vo/text/07.txt",
+      "timing": "vo/timing/07.json",
+      "wav": "vo/wav/07.wav",
+      "beats": [
+        {
+          "key": "best",
+          "word": "开头",
+          "text": "没有最好的城市",
+          "mode": "F",
+          "clip": "39410948",
+          "type": "F"
+        },
+        {
+          "key": "now",
+          "word": "只有此刻",
+          "text": "只有此刻最适合你的",
+          "type": "F"
+        },
+        {
+          "key": "score",
+          "word": "拿出一张纸",
+          "text": "钱｜机会｜时间｜门｜上海｜深圳｜东京｜硅谷｜？",
+          "mode": "B",
+          "type": "B"
+        },
+        {
+          "key": "weight",
+          "word": "权重",
+          "text": "分数｜×｜权重｜=｜你的答案",
+          "type": "B"
+        },
+        {
+          "key": "answer",
+          "word": "答案会自己",
+          "mode": "F",
+          "clip": "35173187",
+          "type": "F"
+        },
+        {
+          "key": "montage_two",
+          "mode": "F",
+          "clip": "20162399",
+          "after": "answer",
+          "offset": 16,
+          "type": "F"
+        },
+        {
+          "key": "montage_three",
+          "mode": "F",
+          "clip": "10184687",
+          "after": "answer",
+          "offset": 32,
+          "type": "F"
+        }
+      ],
+      "elements": [
+        {
+          "type": "if",
+          "condition": "on('answer')",
+          "then": [],
+          "else": [
+            {
+              "type": "if",
+              "condition": "on('score')",
+              "then": [
+                {
+                  "type": "table",
+                  "elements": [
+                    {
+                      "type": "set",
+                      "name": "x0",
+                      "value": 340
+                    },
+                    {
+                      "type": "set",
+                      "name": "top",
+                      "value": {
+                        "expr": "235 + (0 if on('weight') else 57)"
+                      }
+                    },
+                    {
+                      "type": "set",
+                      "name": "cw",
+                      "value": 360
+                    },
+                    {
+                      "type": "set",
+                      "name": "rh",
+                      "value": 120
+                    },
+                    {
+                      "type": "repeat",
+                      "names": "(i, city)",
+                      "items": {
+                        "expr": "enumerate(CITIES)"
+                      },
+                      "elements": [
+                        {
+                          "type": "text",
+                          "target": "im",
+                          "args": [
+                            {
+                              "expr": "city"
+                            },
+                            {
+                              "expr": "x0 + i * cw + cw / 2"
+                            },
+                            {
+                              "expr": "170 + (0 if on('weight') else 57)"
+                            },
+                            56
+                          ],
+                          "kwargs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "type": "repeat",
+                      "names": "(j, label)",
+                      "items": {
+                        "expr": "enumerate(['钱', '机会', '时间', '门'])"
+                      },
+                      "elements": [
+                        {
+                          "type": "text",
+                          "target": "im",
+                          "args": [
+                            {
+                              "expr": "label"
+                            },
+                            215,
+                            {
+                              "expr": "top + j * rh + rh / 2"
+                            },
+                            48
+                          ],
+                          "kwargs": {}
+                        },
+                        {
+                          "type": "repeat",
+                          "names": "i",
+                          "items": {
+                            "expr": "range(4)"
+                          },
+                          "elements": [
+                            {
+                              "type": "set",
+                              "name": "x",
+                              "value": {
+                                "expr": "x0 + i * cw"
+                              }
+                            },
+                            {
+                              "type": "set",
+                              "name": "y",
+                              "value": {
+                                "expr": "top + j * rh"
+                              }
+                            },
+                            {
+                              "type": "rounded",
+                              "target": "im",
+                              "args": [
+                                {
+                                  "expr": "(x + 6, y + 6, x + cw - 6, y + rh - 6)"
+                                },
+                                "#FBF9F3",
+                                6,
+                                {
+                                  "expr": "GRAY"
+                                },
+                                2
+                              ],
+                              "kwargs": {}
+                            },
+                            {
+                              "type": "text",
+                              "target": "im",
+                              "args": [
+                                "？",
+                                {
+                                  "expr": "x + cw / 2"
+                                },
+                                {
+                                  "expr": "y + rh / 2"
+                                },
+                                48,
+                                "#B7B2A7"
+                              ],
+                              "kwargs": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "condition": "on('weight')",
+                      "then": [
+                        {
+                          "type": "chip-k",
+                          "target": "im",
+                          "args": [
+                            "分数",
+                            460,
+                            815,
+                            59
+                          ],
+                          "kwargs": {
+                            "age": {
+                              "expr": "age('weight')"
+                            }
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "target": "im",
+                          "args": [
+                            "×",
+                            695,
+                            815,
+                            80
+                          ],
+                          "kwargs": {}
+                        },
+                        {
+                          "type": "chip-k",
+                          "target": "im",
+                          "args": [
+                            "权重",
+                            930,
+                            815,
+                            59
+                          ],
+                          "kwargs": {
+                            "age": {
+                              "expr": "age('weight')"
+                            }
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "target": "im",
+                          "args": [
+                            "=",
+                            1165,
+                            815,
+                            80
+                          ],
+                          "kwargs": {}
+                        },
+                        {
+                          "type": "chip-y",
+                          "target": "im",
+                          "args": [
+                            "你的答案",
+                            1460,
+                            815,
+                            59
+                          ],
+                          "kwargs": {
+                            "age": {
+                              "expr": "age('weight')"
+                            }
+                          }
+                        }
+                      ],
+                      "else": []
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "type": "kinetic",
+                  "target": "im",
+                  "args": [
+                    "没有最好的城市",
+                    370,
+                    115
+                  ],
+                  "kwargs": {
+                    "age": {
+                      "expr": "age('best')"
+                    }
+                  }
+                },
+                {
+                  "type": "if",
+                  "condition": "on('now')",
+                  "then": [
+                    {
+                      "type": "kinetic",
+                      "target": "im",
+                      "args": [
+                        "只有此刻最适合你的",
+                        610,
+                        115,
+                        "此刻",
+                        {
+                          "expr": "age('now')"
+                        }
+                      ],
+                      "kwargs": {}
+                    }
+                  ],
+                  "else": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "settle_frames": 30
+}

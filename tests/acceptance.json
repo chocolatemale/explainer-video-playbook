@@ -1,0 +1,61 @@
+{
+  "status": "files_verified_git_initialization_blocked",
+  "checks": {
+    "equivalence": {
+      "passed": true,
+      "frames": 10,
+      "layers": [
+        "gfx",
+        "subs"
+      ],
+      "mean_absolute_pixel_difference": 0.0,
+      "threshold": 3,
+      "report": "equivalence.json"
+    },
+    "compose": {
+      "passed": true,
+      "frames": 500,
+      "seconds": 20.0,
+      "fully_decoded": true,
+      "report": "compose.json"
+    },
+    "fcpxml": {
+      "passed": true,
+      "version": "1.10",
+      "footage_assets": 26,
+      "assets_including_layers": 29,
+      "v1_clips": 31,
+      "connected_clips": 3,
+      "report": "fcpxml.json"
+    },
+    "privacy": {
+      "passed": true,
+      "matches": 0,
+      "excludes": [
+        ".git"
+      ]
+    },
+    "git": {
+      "passed": false,
+      "initialized": false,
+      "commit": null,
+      "reason": "Sandbox marks repository metadata read-only; git init returned Operation not permitted. No push attempted.",
+      "candidate_file_count": 81,
+      "candidate_file_bytes": 716215,
+      "tracked_size_verified": false
+    }
+  },
+  "additional": {
+    "unit_and_media_tests": 4,
+    "random_access_boundary_frames": 442,
+    "segment_and_shot_clock_matches": true,
+    "mix_integrated_lufs": -14.04,
+    "mix_true_peak_dbtp": -1.0,
+    "methodology_unchanged": true,
+    "font_download_matches_original": true,
+    "screenshots": 4,
+    "max_screenshot_bytes": 121803,
+    "editor_gui_import_tested": false,
+    "browser_harvest_tested": false
+  }
+}

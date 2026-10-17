@@ -1,0 +1,305 @@
+{
+  "transcription": [
+    {
+      "text": "先",
+      "offsets": {
+        "from": 0,
+        "to": 220
+      }
+    },
+    {
+      "text": "看",
+      "offsets": {
+        "from": 220,
+        "to": 350
+      }
+    },
+    {
+      "text": "工",
+      "offsets": {
+        "from": 350,
+        "to": 480
+      }
+    },
+    {
+      "text": "资",
+      "offsets": {
+        "from": 480,
+        "to": 1210
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 1210,
+        "to": 1310
+      }
+    },
+    {
+      "text": "同",
+      "offsets": {
+        "from": 1310,
+        "to": 1400
+      }
+    },
+    {
+      "text": "样",
+      "offsets": {
+        "from": 1400,
+        "to": 1410
+      }
+    },
+    {
+      "text": "是",
+      "offsets": {
+        "from": 1410,
+        "to": 1510
+      }
+    },
+    {
+      "text": "写",
+      "offsets": {
+        "from": 1510,
+        "to": 1820
+      }
+    },
+    {
+      "text": "代",
+      "offsets": {
+        "from": 1820,
+        "to": 1910
+      }
+    },
+    {
+      "text": "码",
+      "offsets": {
+        "from": 1910,
+        "to": 2300
+      }
+    },
+    {
+      "text": "硅",
+      "offsets": {
+        "from": 2820,
+        "to": 2950
+      }
+    },
+    {
+      "text": "谷",
+      "offsets": {
+        "from": 2950,
+        "to": 3080
+      }
+    },
+    {
+      "text": "程",
+      "offsets": {
+        "from": 3080,
+        "to": 3210
+      }
+    },
+    {
+      "text": "序",
+      "offsets": {
+        "from": 3210,
+        "to": 3600
+      }
+    },
+    {
+      "text": "员",
+      "offsets": {
+        "from": 3600,
+        "to": 4120
+      }
+    },
+    {
+      "text": "的",
+      "offsets": {
+        "from": 4120,
+        "to": 4220
+      }
+    },
+    {
+      "text": "年",
+      "offsets": {
+        "from": 4220,
+        "to": 4250
+      }
+    },
+    {
+      "text": "薪",
+      "offsets": {
+        "from": 4250,
+        "to": 4640
+      }
+    },
+    {
+      "text": "中",
+      "offsets": {
+        "from": 4640,
+        "to": 4770
+      }
+    },
+    {
+      "text": "位",
+      "offsets": {
+        "from": 4770,
+        "to": 4900
+      }
+    },
+    {
+      "text": "数",
+      "offsets": {
+        "from": 4900,
+        "to": 5110
+      }
+    },
+    {
+      "text": "大",
+      "offsets": {
+        "from": 5110,
+        "to": 5390
+      }
+    },
+    {
+      "text": "约",
+      "offsets": {
+        "from": 5390,
+        "to": 5820
+      }
+    },
+    {
+      "text": "15",
+      "offsets": {
+        "from": 5820,
+        "to": 6040
+      }
+    },
+    {
+      "text": "7",
+      "offsets": {
+        "from": 6040,
+        "to": 6320
+      }
+    },
+    {
+      "text": "万",
+      "offsets": {
+        "from": 6320,
+        "to": 6410
+      }
+    },
+    {
+      "text": "人民",
+      "offsets": {
+        "from": 6410,
+        "to": 6590
+      }
+    },
+    {
+      "text": "币",
+      "offsets": {
+        "from": 6590,
+        "to": 6920
+      }
+    },
+    {
+      "text": "是",
+      "offsets": {
+        "from": 7420,
+        "to": 7420
+      }
+    },
+    {
+      "text": "上",
+      "offsets": {
+        "from": 7420,
+        "to": 7420
+      }
+    },
+    {
+      "text": "海",
+      "offsets": {
+        "from": 7420,
+        "to": 7560
+      }
+    },
+    {
+      "text": "的",
+      "offsets": {
+        "from": 7560,
+        "to": 7640
+      }
+    },
+    {
+      "text": "2",
+      "offsets": {
+        "from": 7640,
+        "to": 8060
+      }
+    },
+    {
+      "text": "倍",
+      "offsets": {
+        "from": 8060,
+        "to": 8220
+      }
+    },
+    {
+      "text": "多",
+      "offsets": {
+        "from": 8220,
+        "to": 8670
+      }
+    },
+    {
+      "text": ",",
+      "offsets": {
+        "from": 8670,
+        "to": 8760
+      }
+    },
+    {
+      "text": "东",
+      "offsets": {
+        "from": 8760,
+        "to": 8820
+      }
+    },
+    {
+      "text": "京",
+      "offsets": {
+        "from": 8820,
+        "to": 8890
+      }
+    },
+    {
+      "text": "的",
+      "offsets": {
+        "from": 8890,
+        "to": 9000
+      }
+    },
+    {
+      "text": "4",
+      "offsets": {
+        "from": 9000,
+        "to": 9350
+      }
+    },
+    {
+      "text": "倍",
+      "offsets": {
+        "from": 9350,
+        "to": 9460
+      }
+    },
+    {
+      "text": "多",
+      "offsets": {
+        "from": 9460,
+        "to": 9620
+      }
+    }
+  ]
+}

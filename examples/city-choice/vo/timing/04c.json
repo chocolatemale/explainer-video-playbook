@@ -1,0 +1,165 @@
+{
+  "transcription": [
+    {
+      "text": "每",
+      "offsets": {
+        "from": 0,
+        "to": 230
+      }
+    },
+    {
+      "text": "天",
+      "offsets": {
+        "from": 230,
+        "to": 280
+      }
+    },
+    {
+      "text": "差",
+      "offsets": {
+        "from": 280,
+        "to": 430
+      }
+    },
+    {
+      "text": "20",
+      "offsets": {
+        "from": 430,
+        "to": 1260
+      }
+    },
+    {
+      "text": "分",
+      "offsets": {
+        "from": 1260,
+        "to": 1400
+      }
+    },
+    {
+      "text": "钟",
+      "offsets": {
+        "from": 1400,
+        "to": 1540
+      }
+    },
+    {
+      "text": "一",
+      "offsets": {
+        "from": 1800,
+        "to": 1960
+      }
+    },
+    {
+      "text": "年",
+      "offsets": {
+        "from": 1960,
+        "to": 2030
+      }
+    },
+    {
+      "text": "下",
+      "offsets": {
+        "from": 2030,
+        "to": 2230
+      }
+    },
+    {
+      "text": "来",
+      "offsets": {
+        "from": 2230,
+        "to": 2380
+      }
+    },
+    {
+      "text": "就是",
+      "offsets": {
+        "from": 2380,
+        "to": 2820
+      }
+    },
+    {
+      "text": "1",
+      "offsets": {
+        "from": 2820,
+        "to": 3110
+      }
+    },
+    {
+      "text": "70",
+      "offsets": {
+        "from": 3110,
+        "to": 3700
+      }
+    },
+    {
+      "text": "多",
+      "offsets": {
+        "from": 3700,
+        "to": 3790
+      }
+    },
+    {
+      "text": "个",
+      "offsets": {
+        "from": 3790,
+        "to": 3880
+      }
+    },
+    {
+      "text": "小",
+      "offsets": {
+        "from": 3880,
+        "to": 3990
+      }
+    },
+    {
+      "text": "时",
+      "offsets": {
+        "from": 3990,
+        "to": 4100
+      }
+    },
+    {
+      "text": "差不多",
+      "offsets": {
+        "from": 4600,
+        "to": 4830
+      }
+    },
+    {
+      "text": "一个",
+      "offsets": {
+        "from": 4830,
+        "to": 5150
+      }
+    },
+    {
+      "text": "月",
+      "offsets": {
+        "from": 5150,
+        "to": 5360
+      }
+    },
+    {
+      "text": "的",
+      "offsets": {
+        "from": 5360,
+        "to": 5590
+      }
+    },
+    {
+      "text": "工作",
+      "offsets": {
+        "from": 5590,
+        "to": 5990
+      }
+    },
+    {
+      "text": "日",
+      "offsets": {
+        "from": 5990,
+        "to": 6200
+      }
+    }
+  ]
+}

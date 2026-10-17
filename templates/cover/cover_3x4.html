@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:NS;src:url(../../build/fonts/NotoSansSC.ttf);font-weight:100 900}
+:root{--paper:#F4F1E8;--ink:#161616;--y:#FFE03A;--r:#E8392F;--b:#3570E8;--g:#1FA971}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1440px;overflow:hidden;background:var(--paper);font-family:NS,sans-serif;color:var(--ink)}
+body{background-image:radial-gradient(rgba(0,0,0,.035) 1px,transparent 1px);background-size:6px 6px}
+.chipk{display:inline-block;background:var(--ink);color:#fff;font-weight:800;border-radius:10px;padding:10px 26px}
+.chipy{display:inline-block;background:var(--y);font-weight:900;border-radius:12px;padding:0 28px}
+.left{position:absolute;left:80px;top:90px}
+.cities{font-size:38px;letter-spacing:.08em}
+.t1{font-size:230px;font-weight:900;line-height:1;margin-top:40px;letter-spacing:-.02em}
+.t2{font-size:170px;font-weight:900;line-height:1;margin-top:26px;letter-spacing:-.02em}
+.t2 .chipy{padding:6px 30px 18px;transform:rotate(-1.5deg);box-shadow:0 10px 0 rgba(0,0,0,.08)}
+.row{margin-top:50px;display:flex;gap:22px;align-items:center}
+.row .c{font-size:46px;font-weight:900;padding:8px 26px;border-radius:12px;background:#fff;border:4px solid var(--ink)}
+.row .plus{font-size:52px;font-weight:900}
+.cards{position:absolute;left:70px;top:880px;width:760px;height:860px}
+.card{position:absolute;width:440px;height:240px;background:#fff;padding:8px;border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.card .img{width:100%;height:100%;border-radius:8px;background-size:cover;background-position:center}
+.card .tag{position:absolute;left:24px;top:22px;background:#fff;font-weight:900;font-size:40px;padding:2px 16px;border-radius:6px}
+.card .bar{position:absolute;left:8px;right:8px;bottom:8px;height:12px;border-radius:0 0 8px 8px}
+.sticker{position:absolute;background:var(--r);color:#fff;font-weight:900;font-size:52px;padding:8px 26px;border:6px solid #fff;border-radius:10px;box-shadow:0 14px 30px rgba(0,0,0,.25)}
+</style></head><body>
+<div class="left">
+  <div class="cities"><span class="chipk">上海 · 深圳 · 东京 · 硅谷</span></div>
+  <div class="t1">选城市</div>
+  <div class="t2">先算<span class="chipy">三本账</span></div>
+  <div class="row"><span class="c">钱</span><span class="c">机会</span><span class="c">时间</span><span class="plus">＋</span><span class="c" style="background:var(--ink);color:#fff">一道门</span></div>
+</div>
+<div class="cards">
+  <div class="card" style="left:0;top:10px;transform:rotate(-4deg)"><div class="img" style="background-image:url(images/1.jpg)"></div><div class="tag">上海</div><div class="bar" style="background:var(--r)"></div></div>
+  <div class="card" style="left:490px;top:0;transform:rotate(3deg)"><div class="img" style="background-image:url(images/2.jpg)"></div><div class="tag">深圳</div><div class="bar" style="background:var(--g)"></div></div>
+  <div class="card" style="left:10px;top:285px;transform:rotate(2.5deg)"><div class="img" style="background-image:url(images/3.jpg)"></div><div class="tag">东京</div><div class="bar" style="background:var(--b)"></div></div>
+  <div class="card" style="left:490px;top:275px;transform:rotate(-3deg)"><div class="img" style="background-image:url(images/4.jpg)"></div><div class="tag">硅谷</div><div class="bar" style="background:var(--y)"></div></div>
+  <div class="sticker" style="left:190px;top:205px;transform:rotate(-6deg)">工资最高 ≠ 过得最好</div>
+</div>
+</body></html>
