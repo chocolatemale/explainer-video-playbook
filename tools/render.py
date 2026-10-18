@@ -16,7 +16,7 @@ class Renderer:
         if (timeline['width'],timeline['height'],timeline['fps']) != (1920,1080,25):
             raise ValueError('This style preset uses 1920×1080 at 25 fps; scale at composition time')
         p.FONT_DIR=Path(fonts);p.STILLS=Path(stills)
-        for fn in (p.font,p.photo,p.chip_tile,p.card_tile,p.kinetic_tile):fn.cache_clear()
+        p.reset_font_caches();p.photo.cache_clear()
         self.segments={s['id']:s for s in spec['segments']}
         self.functions={name:getattr(p,name) for name in ['ease','measure','shadow','photo']}
         self.functions.update(dict(str=str,round=round,len=len,enumerate=enumerate,zip=zip,
@@ -95,10 +95,11 @@ class Renderer:
     def subs(self,f):
         im=Image.new('RGBA',(p.W,p.H));c=next((c for c in self.t['captions'] if c['start']<=f<c['end']),None)
         if c:
+            style=p.caption_style();size,stroke,y=style['size'],style['stroke'],style['y']
             shade=Image.new('RGBA',im.size)
-            ImageDraw.Draw(shade).text((963,1016),c['text'],font=p.font(46,'Bold'),fill=(0,0,0,170),anchor='ms',stroke_width=5,stroke_fill=(0,0,0,170))
-            im.alpha_composite(shade.filter(ImageFilter.GaussianBlur(4)))
-            p.text(im,c['text'],960,1010,46,'white',anchor='ms',stroke=5,weight='Bold')
+            p.text(shade,c['text'],963,y+6,size,(0,0,0,170),anchor='ms',stroke=stroke,role='caption',stroke_fill=(0,0,0,170))
+            im.alpha_composite(shade.filter(ImageFilter.GaussianBlur(5)))
+            p.text(im,c['text'],960,y,size,'white',anchor='ms',stroke=stroke,role='caption')
         return im
 
     def signature(self,f):
@@ -126,6 +127,6 @@ def main():
         if c in captions and captions[c]!=sp:os.link(captions[c],sp)
         else:r.subs(f).save(sp,compress_level=3);captions[c]=sp
         if f%250==0:print(f'Rendered {f}/{r.t["total_frames"]}',flush=True)
-    (args.output/'subs.srt').write_text(srt(r.t['captions'],r.t['fps']))
+    (args.output/'subs.srt').write_text(srt(r.t['captions'],r.t['fps']),encoding='utf-8')
 
 if __name__=='__main__':main()

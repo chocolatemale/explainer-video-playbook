@@ -1,0 +1,34 @@
+{
+  "active": "cinematic",
+  "presets": {
+    "cinematic": {
+      "title": {"file": "SmileySans.ttf"},
+      "ui": {"file": "SmileySans.ttf"},
+      "caption": {"file": "LXGWWenKai-Medium.ttf", "size": 48, "stroke": 6, "y": 1010},
+      "fallback": {"file": "NotoSansSC.ttf", "variation": "Bold"}
+    },
+    "noto": {
+      "title": {"file": "NotoSansSC.ttf", "variation": "Bold"},
+      "ui": {"file": "NotoSansSC.ttf", "variation": "Bold"},
+      "caption": {"file": "NotoSansSC.ttf", "variation": "Bold", "size": 46, "stroke": 5, "y": 1010},
+      "fallback": {"file": "NotoSansSC.ttf", "variation": "Bold"}
+    }
+  },
+  "files": {
+    "NotoSansSC.ttf": {
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf"
+    },
+    "SmileySans.ttf": {
+      "url": "https://github.com/atelier-anchor/smiley-sans/releases/download/v2.0.1/smiley-sans-v2.0.1.zip",
+      "zip_member": "SmileySans-Oblique.ttf"
+    },
+    "LXGWWenKai-Medium.ttf": {
+      "url": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.530/LXGWWenKai-Medium.ttf"
+    }
+  },
+  "licenses": [
+    {"url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssc/OFL.txt", "as": "OFL-NotoSansSC.txt"},
+    {"url": "https://raw.githubusercontent.com/atelier-anchor/smiley-sans/main/LICENSE", "as": "OFL-SmileySans.txt"},
+    {"url": "https://raw.githubusercontent.com/lxgw/LxgwWenKai/main/OFL.txt", "as": "OFL-LXGWWenKai.txt"}
+  ]
+}

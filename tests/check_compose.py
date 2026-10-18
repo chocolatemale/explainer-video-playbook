@@ -19,6 +19,6 @@ def main():
     audio=next(s for s in data['streams'] if s['codec_type']=='audio')
     out=dict(fully_decoded=True,duration=seconds,expected_duration=a.seconds,tolerance=.1,
              video_codec=video['codec_name'],audio_codec=audio['codec_name'],frames=int(video['nb_frames']))
-    if a.output:a.output.write_text(json.dumps(out,indent=2)+'\n')
+    if a.output:a.output.write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(out,indent=2))
 if __name__=='__main__':main()

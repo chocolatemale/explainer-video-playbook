@@ -34,7 +34,9 @@
 
 ## 字幕
 
-见上图每张样张的底部：白字粗体约 46px，5px 黑描边加投影，基线在 y≈1010，每屏最多 16 个字，不带句末标点，文字一律用原稿。
+见上图每张样张的底部：白字约 48px（霞鹜文楷 Medium），6px 黑描边加投影，基线在 y≈1010，每屏最多 16 个字，不带句末标点，文字一律用原稿。贴纸、标签和实拍大字用得意黑。缺字回退 Noto Sans SC。字体文件由 `tools/fetch_fonts.sh` 从官方发布页下载，角色映射在 [`tools/fonts.json`](../tools/fonts.json)；`PLAYBOOK_FONT_PRESET=noto` 可切回原来的 Noto Sans SC Bold。对照见 [字体前后对比](img/style/font-comparison.jpg)。
+
+HarmonyOS Sans、MiSans、阿里巴巴普惠体都可以商用出片，但官方协议限制转载或再分发字体文件，所以没有放进下载脚本。
 
 ## 封面
 
@@ -50,7 +52,7 @@
 - 四张略微倾斜的素材卡片，底边是各自的对象色。
 - 一张红贴纸写反直觉的结论。
 
-模板在 [`templates/cover/`](../templates/cover/)：把四张静帧放到 `templates/cover/images/1.jpg`…`4.jpg`，再运行 `tools/fetch_fonts.sh` 下载字体，然后用浏览器截图即可。
+模板在 [`templates/cover/`](../templates/cover/)：把四张静帧放到 `templates/cover/images/1.jpg`…`4.jpg`，再运行 `tools/fetch_fonts.sh` 下载字体（封面标题用得意黑，并回退 Noto Sans SC），然后用浏览器截图即可。
 
 ```bash
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars --window-size=1920,1080 --allow-file-access-from-files --screenshot="$PWD/cover_16x9.png" "file://$PWD/templates/cover/cover_16x9.html"

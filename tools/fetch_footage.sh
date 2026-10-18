@@ -6,7 +6,7 @@ import json,subprocess,sys
 from pathlib import Path
 from urllib.parse import urlparse
 if len(sys.argv)!=3:raise SystemExit('Usage: fetch_footage.sh manifest.json output-directory')
-items=json.loads(Path(sys.argv[1]).read_text());out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)
+items=json.loads(Path(sys.argv[1]).read_text(encoding='utf-8'));out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)
 for item in items:
     clip=str(item['id']);url=item['url']
     if not clip.isdigit():raise ValueError('ID must contain only digits')

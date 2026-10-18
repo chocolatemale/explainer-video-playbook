@@ -18,7 +18,7 @@ def main():
     subprocess.run([sys.executable,str(ROOT/'tools/render.py'),'--spec',str(spec),'--timeline',str(a.work/'timeline.json'),
         '--fonts',str(a.fonts),'--stills',str(a.original/'program/stills'),'--output',str(a.work/'layers'),'--frames',','.join(map(str,FRAMES))],check=True)
     records=[]
-    timeline=json.loads((a.work/'timeline.json').read_text())
+    timeline=json.loads((a.work/'timeline.json').read_text(encoding='utf-8'))
     for f in FRAMES:
         means={}
         for layer in ['gfx','subs']:
@@ -31,6 +31,6 @@ def main():
         records.append(dict(frame=f,mode=mode,caption=caption,mean_absolute_error_rgba=means))
     avg=sum(v for r in records for v in r['mean_absolute_error_rgba'].values())/20
     out=dict(method='mean absolute difference of all RGBA channels, 0–255',frames=records,mean=avg,threshold=3,passed=all(v<3 for r in records for v in r['mean_absolute_error_rgba'].values()))
-    a.output.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n');print(f'Mean pixel difference: {avg}')
+    a.output.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(f'Mean pixel difference: {avg}')
     assert out['passed']
 if __name__=='__main__':main()

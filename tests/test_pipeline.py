@@ -6,6 +6,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
@@ -25,6 +26,45 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(a['chars'][0][0], 10)
         self.assertTrue(all(a['chars'][i][0] <= a['chars'][i+1][0] for i in range(len(a['chars'])-1)))
 
+    def test_plain_keeps_chinese_and_letters(self):
+        import align
+        self.assertEqual(align.plain('选城市，算三本账。'), '选城市算三本账')
+        self.assertEqual(align.plain('H-1B签证'), 'H1B签证')
+        self.assertEqual(align.plain('CPU 157万'), 'CPU157万')
+
+    def test_srt_writes_chinese_utf8(self):
+        from common import srt
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / 'subs.srt'
+            text = srt([{'text': '选城市算三本账', 'start': 0, 'end': 25}], 25)
+            path.write_text(text, encoding='utf-8')
+            self.assertIn('选城市算三本账'.encode('utf-8'), path.read_bytes())
+            self.assertEqual(path.read_text(encoding='utf-8'), text)
+
+    def test_timeline_aligns_chinese_manuscript(self):
+        import align
+        from common import save
+        with tempfile.TemporaryDirectory() as d:
+            base = Path(d)
+            (base / 'vo.txt').write_text('选城市，算三本账。', encoding='utf-8')
+            save(base / 'timing.json', {'transcription': [
+                {'text': '选', 'offsets': {'from': 0, 'to': 200}},
+                {'text': '城市', 'offsets': {'from': 200, 'to': 500}},
+                {'text': '算', 'offsets': {'from': 500, 'to': 700}},
+                {'text': '三本账', 'offsets': {'from': 700, 'to': 1200}},
+            ]})
+            spec = {'width': 1920, 'height': 1080, 'fps': 25, 'segments': [
+                {'id': 'demo', 'text': 'vo.txt', 'timing': 'timing.json',
+                 'beats': [{'key': 'open', 'word': '开头', 'type': 'F', 'mode': 'F', 'clip': '1'},
+                           {'key': 'city', 'word': '选城市', 'type': 'F'}]}]}
+            edl = {'fps': 25, 'total_frames': 50,
+                   'segments': [{'seg': 'demo', 'start': 0, 'frames': 50}],
+                   'vo': [{'id': 'demo', 'rec': 0}]}
+            t = align.make_timeline(spec, edl, base)
+            self.assertEqual(t['alignment']['demo']['text'], '选城市算三本账')
+            self.assertEqual([c['text'] for c in t['captions']], ['选城市', '算三本账'])
+            self.assertIn('city', t['triggers']['demo'])
+
     def test_renderer_is_data_driven_and_random_access(self):
         from render import Renderer
         timeline = {'width': 1920, 'height': 1080, 'fps': 25, 'total_frames': 30,
@@ -39,6 +79,25 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(r.gfx(18).getchannel('A').getextrema(), (255, 255))
         self.assertEqual(r.subs(1).size, (1920,1080))
         with self.assertRaises(ValueError): r.value({'expr': "__import__('os').getcwd()"}, {})
+
+    def test_font_presets_and_fallback(self):
+        import primitives as p
+        fonts = Path(os.environ.get('PLAYBOOK_FONTS', ROOT / 'build/fonts'))
+        p.FONT_DIR = fonts
+        p.PRESET = 'cinematic'
+        p.reset_font_caches()
+        self.assertEqual(p.role_spec('title')['file'], 'SmileySans.ttf')
+        self.assertEqual(p.caption_style()['size'], 48)
+        missing = next(chr(cp) for cp in range(0x4E00, 0x9FFF) if (not p._has_glyph('title', chr(cp))) and p._has_glyph('fallback', chr(cp)))
+        a = Image.new('RGBA', (200, 80), (0, 0, 0, 0))
+        p.text(a, missing, 100, 40, 48, role='title')
+        self.assertGreater(a.getchannel('A').getextrema()[1], 0)
+        p.PRESET = 'noto'
+        p.reset_font_caches()
+        self.assertEqual(p.role_spec('title')['file'], 'NotoSansSC.ttf')
+        self.assertEqual(p.caption_style()['size'], 46)
+        p.PRESET = None
+        p.reset_font_caches()
 
     def test_fcpxml_counts(self):
         with tempfile.TemporaryDirectory() as d:
