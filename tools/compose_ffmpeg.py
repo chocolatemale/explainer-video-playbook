@@ -31,7 +31,7 @@ def compose(edl,footage,gfx,subs,mix,output,seconds=None,hw=False,fade_seconds=1
             parts.append(part);cursor+=n
         if cursor!=frames:raise ValueError('V1 EDL does not cover requested duration')
         # File names here are generated numeric names under our own temporary directory.
-        listing=tmp/'concat.txt';listing.write_text(''.join(f"file '{p.name}'\n" for p in parts))
+        listing=tmp/'concat.txt';listing.write_text(''.join(f"file '{p.name}'\n" for p in parts),encoding='utf-8')
         run(['-f','concat','-safe','1','-i',listing,'-c','copy',tmp/'base.mp4'])
         duration=frames/fps
         fade=min(fade_seconds,total/fps);start=(total/fps)-fade

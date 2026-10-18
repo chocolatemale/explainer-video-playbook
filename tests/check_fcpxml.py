@@ -6,7 +6,7 @@ from fractions import Fraction
 from pathlib import Path
 
 def check(xml,edl):
-    root=ET.parse(xml).getroot();e=json.loads(Path(edl).read_text());fps=e['fps']
+    root=ET.parse(xml).getroot();e=json.loads(Path(edl).read_text(encoding='utf-8'));fps=e['fps']
     assert root.tag=='fcpxml' and root.get('version')=='1.10'
     assets=root.findall('./resources/asset');unique={str(s['clip']) for s in e['shots']}
     assert len(assets)==len(unique)+3,(len(assets),len(unique)+3)

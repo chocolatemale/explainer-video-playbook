@@ -19,7 +19,7 @@ class MediaTests(unittest.TestCase):
             ff('-f','lavfi','-i','sine=frequency=150:duration=4','-ar','48000',d/'music.wav')
             edl={'fps':25,'total_frames':100,'vo':[{'id':'a','rec':10}],
                  'shots':[{'seg':'a','clip':'1','rec':0,'frames':100,'src_in_sec':0}]}
-            (d/'edl.json').write_text(json.dumps(edl))
+            (d/'edl.json').write_text(json.dumps(edl),encoding='utf-8')
             subprocess.run([sys.executable,str(ROOT/'tools/mix.py'),'--edl',str(d/'edl.json'),
                 '--wav-dir',str(d/'wav'),'--music',str(d/'music.wav'),'--output',str(d/'mix.wav')],check=True)
             self.assertAlmostEqual(float(probe(d/'mix.wav')['format']['duration']),4,places=2)

@@ -20,7 +20,7 @@ def chinese(n):
             zero=False
         elif out and n:zero=True
     return out
-def plain(s):return ''.join(re.findall(r'[\u3400-\u9fff0-9]',s))
+def plain(s):return ''.join(ch for ch in s if ch.isalnum())
 def recognition(items):
     chars=[]; times=[]
     for item in items:
@@ -65,7 +65,7 @@ def make_timeline(spec, edl, base):
     definitions = {s['id']: s for s in spec['segments']}
     for vo in edl['vo']:
         sid = vo['id']; d = definitions[sid]
-        text = (base/d['text']).read_text().strip()
+        text = (base/d['text']).read_text(encoding='utf-8').strip()
         items = load(base/d['timing'])['transcription']
         if not items: raise ValueError(f'Empty timing: {sid}')
         aligned[sid] = align(text, items, vo['rec'], fps)
@@ -94,7 +94,7 @@ def make_timeline(spec, edl, base):
     for i,m in enumerate(modes):m['end']=modes[i+1]['start'] if i+1<len(modes) else total
     captions=[]
     for sid,a in aligned.items():
-        original=(base/definitions[sid]['text']).read_text().strip();cursor=0
+        original=(base/definitions[sid]['text']).read_text(encoding='utf-8').strip();cursor=0
         for clause in re.split(r'[，。？！；：、,!?;:\n]+',original):
             p=plain(re.sub(r'[0-9]+',lambda m:chinese(m.group()),clause))
             if not p:continue
@@ -126,7 +126,7 @@ def main():
     p.add_argument('--spec',required=True,type=Path);p.add_argument('--edl',required=True,type=Path)
     p.add_argument('--output',required=True,type=Path)
     a=p.parse_args();t=make_timeline(load(a.spec),load(a.edl),a.spec.parent)
-    save(a.output,t);a.output.with_suffix('.srt').write_text(srt(t['captions'],t['fps']))
+    save(a.output,t);a.output.with_suffix('.srt').write_text(srt(t['captions'],t['fps']),encoding='utf-8')
     print(f"Aligned {len(t['events'])} beats, {len(t['captions'])} captions")
 
 if __name__=='__main__':main()

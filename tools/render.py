@@ -126,6 +126,6 @@ def main():
         if c in captions and captions[c]!=sp:os.link(captions[c],sp)
         else:r.subs(f).save(sp,compress_level=3);captions[c]=sp
         if f%250==0:print(f'Rendered {f}/{r.t["total_frames"]}',flush=True)
-    (args.output/'subs.srt').write_text(srt(r.t['captions'],r.t['fps']))
+    (args.output/'subs.srt').write_text(srt(r.t['captions'],r.t['fps']),encoding='utf-8')
 
 if __name__=='__main__':main()

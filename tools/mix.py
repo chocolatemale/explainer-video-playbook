@@ -36,7 +36,7 @@ def mix(edl,wavs,music,output):
               f":measured_I={measured['input_i']}:measured_TP={measured['input_tp']}"
               f":measured_LRA={measured['input_lra']}:measured_thresh={measured['input_thresh']}:offset={measured['target_offset']}")
         ffmpeg(['-i',premix,'-af',norm,'-ar','48000','-ac','2','-c:a','pcm_s24le',output],True)
-        output.with_suffix('.loudnorm.json').write_text(json.dumps(measured,indent=2)+'\n')
+        output.with_suffix('.loudnorm.json').write_text(json.dumps(measured,indent=2)+'\n',encoding='utf-8')
     print('Mixed VO + ducked music; two-pass target −14 LUFS / −1 dBTP')
 
 def main():
