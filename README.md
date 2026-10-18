@@ -58,6 +58,6 @@ python tests/check_equivalence.py --original "$ORIGINAL_PROJECT" --work /tmp/pla
 
 ## 致谢与许可
 
-感谢 [Pexels](https://www.pexels.com/license/) 的实拍素材、[Mixkit](https://mixkit.co/license/) 的音乐资源，以及 [Noto](https://fonts.google.com/noto) 字体。下载前核对各项资产的许可；本仓库只给素材 ID、页面与直链，音乐请自行选择并保存许可记录。
+感谢 [Pexels](https://www.pexels.com/license/) 的实拍素材、[Mixkit](https://mixkit.co/license/) 的音乐资源，以及 [得意黑 Smiley Sans](https://github.com/atelier-anchor/smiley-sans)、[霞鹜文楷 LXGW WenKai](https://github.com/lxgw/LxgwWenKai) 与 [Noto Sans SC](https://fonts.google.com/noto) 字体。默认画面用得意黑、字幕用霞鹜文楷 Medium，缺字回退到 Noto Sans SC。`tools/fonts.json` 的 `active` 或环境变量 `PLAYBOOK_FONT_PRESET=noto` 可切回原来的全 Noto 粗体。下载前核对各项资产的许可；本仓库只给素材 ID、页面与直链，音乐请自行选择并保存许可记录。
 
-代码（`tools/`、`tests/` 和案例的计算脚本）采用 [MIT](LICENSE)；文档、分镜规格、配音文稿和研究整理采用 [CC BY 4.0](LICENSE-DOCS.txt)，署名 `explainer-video-playbook contributors`，转载注明仓库名、来源链接及修改情况。第三方数据、字体、音乐、实拍及截图中的实拍部分保持原许可，不因本仓库的许可而变更。Noto 字体遵循 OFL，下载脚本同时获取许可证。请勿把下载的原始素材、配音、字体或制作日志提交到仓库。
+代码（`tools/`、`tests/` 和案例的计算脚本）采用 [MIT](LICENSE)；文档、分镜规格、配音文稿和研究整理采用 [CC BY 4.0](LICENSE-DOCS.txt)，署名 `explainer-video-playbook contributors`，转载注明仓库名、来源链接及修改情况。第三方数据、字体、音乐、实拍及截图中的实拍部分保持原许可，不因本仓库的许可而变更。上述字体均为 SIL OFL 1.1，下载脚本同时获取许可证。请勿把下载的原始素材、配音、字体或制作日志提交到仓库。

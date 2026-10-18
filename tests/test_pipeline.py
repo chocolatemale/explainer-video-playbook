@@ -6,6 +6,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
@@ -78,6 +79,25 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(r.gfx(18).getchannel('A').getextrema(), (255, 255))
         self.assertEqual(r.subs(1).size, (1920,1080))
         with self.assertRaises(ValueError): r.value({'expr': "__import__('os').getcwd()"}, {})
+
+    def test_font_presets_and_fallback(self):
+        import primitives as p
+        fonts = Path(os.environ.get('PLAYBOOK_FONTS', ROOT / 'build/fonts'))
+        p.FONT_DIR = fonts
+        p.PRESET = 'cinematic'
+        p.reset_font_caches()
+        self.assertEqual(p.role_spec('title')['file'], 'SmileySans.ttf')
+        self.assertEqual(p.caption_style()['size'], 48)
+        missing = next(chr(cp) for cp in range(0x4E00, 0x9FFF) if (not p._has_glyph('title', chr(cp))) and p._has_glyph('fallback', chr(cp)))
+        a = Image.new('RGBA', (200, 80), (0, 0, 0, 0))
+        p.text(a, missing, 100, 40, 48, role='title')
+        self.assertGreater(a.getchannel('A').getextrema()[1], 0)
+        p.PRESET = 'noto'
+        p.reset_font_caches()
+        self.assertEqual(p.role_spec('title')['file'], 'NotoSansSC.ttf')
+        self.assertEqual(p.caption_style()['size'], 46)
+        p.PRESET = None
+        p.reset_font_caches()
 
     def test_fcpxml_counts(self):
         with tempfile.TemporaryDirectory() as d:

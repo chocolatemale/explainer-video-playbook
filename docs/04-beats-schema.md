@@ -68,7 +68,7 @@
 
 | type | args（按顺序） | 常用 kwargs |
 |---|---|---|
-| `text` | 文字, x, y, size=60, fill=墨色 | `anchor`, `stroke`, `weight`（Bold / Medium） |
+| `text` | 文字, x, y, size=60, fill=墨色 | `anchor`, `stroke`, `weight`（Bold / Medium；静态展示字体忽略字重轴） |
 | `chip-y`, `chip-k`, `chip-g`, `sticker-r` | 文字, cx, cy, size=60 | `age`, `angle`；红贴纸通常 `angle:8` |
 | `chip` | 文字, cx, cy, size=60, kind=y, age=null, angle=0 | kind 可 y/k/g/r/tag |
 | `tag` | 文字, age=null | 固定左上角的白标签 |
